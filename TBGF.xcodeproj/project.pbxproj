@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8351D2AD1FC80FF400EFBB9B /* icon_lanuch.png in Resources */ = {isa = PBXBuildFile; fileRef = 8351D2AB1FC80FF300EFBB9B /* icon_lanuch.png */; };
 		8382462C1FC556C800995AB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8382462B1FC556C800995AB9 /* AppDelegate.m */; };
 		8382462F1FC556C800995AB9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8382462E1FC556C800995AB9 /* ViewController.m */; };
 		838246321FC556C800995AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838246301FC556C800995AB9 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8351D2AB1FC80FF300EFBB9B /* icon_lanuch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_lanuch.png; sourceTree = "<group>"; };
 		838246271FC556C800995AB9 /* TBGF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBGF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8382462A1FC556C800995AB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8382462B1FC556C800995AB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +80,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8351D2AA1FC80FF300EFBB9B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8351D2AB1FC80FF300EFBB9B /* icon_lanuch.png */,
+				8351D2AC1FC80FF300EFBB9B /* images */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		8351D2AC1FC80FF300EFBB9B /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		8382461E1FC556C700995AB9 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +119,7 @@
 		838246291FC556C800995AB9 /* TBGF */ = {
 			isa = PBXGroup;
 			children = (
+				8351D2AA1FC80FF300EFBB9B /* Resources */,
 				8382462A1FC556C800995AB9 /* AppDelegate.h */,
 				8382462B1FC556C800995AB9 /* AppDelegate.m */,
 				8382462D1FC556C800995AB9 /* ViewController.h */,
@@ -200,6 +219,11 @@
 					838246261FC556C800995AB9 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					8382463E1FC556C800995AB9 = {
 						CreatedOnToolsVersion = 9.0;
@@ -239,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				838246371FC556C800995AB9 /* LaunchScreen.storyboard in Resources */,
+				8351D2AD1FC80FF400EFBB9B /* icon_lanuch.png in Resources */,
 				838246341FC556C800995AB9 /* Assets.xcassets in Resources */,
 				838246321FC556C800995AB9 /* Main.storyboard in Resources */,
 			);
@@ -431,9 +456,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L95K8W66M;
 				INFOPLIST_FILE = TBGF/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "---.TBGF";
+				PRODUCT_BUNDLE_IDENTIFIER = zhongtaihulian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -444,9 +470,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L95K8W66M;
 				INFOPLIST_FILE = TBGF/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "---.TBGF";
+				PRODUCT_BUNDLE_IDENTIFIER = zhongtaihulian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
