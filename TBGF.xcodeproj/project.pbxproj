@@ -8,8 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		8351D2AD1FC80FF400EFBB9B /* icon_lanuch.png in Resources */ = {isa = PBXBuildFile; fileRef = 8351D2AB1FC80FF300EFBB9B /* icon_lanuch.png */; };
+		8351D31A1FC81BCD00EFBB9B /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D2F01FC81BCC00EFBB9B /* RootViewController.xib */; };
+		8351D31B1FC81BCD00EFBB9B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D2F21FC81BCC00EFBB9B /* RootViewController.m */; };
+		8351D31F1FC81C2F00EFBB9B /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D31C1FC81C2F00EFBB9B /* MYViewController.m */; };
+		8351D3201FC81C2F00EFBB9B /* MYViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D31E1FC81C2F00EFBB9B /* MYViewController.xib */; };
+		8351D32B1FC820B600EFBB9B /* feiji.png in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3241FC820B600EFBB9B /* feiji.png */; };
+		8351D32C1FC820B600EFBB9B /* map_icon_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3251FC820B600EFBB9B /* map_icon_selected.png */; };
+		8351D32D1FC820B600EFBB9B /* home_icon_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3261FC820B600EFBB9B /* home_icon_selected.png */; };
+		8351D3371FC863B300EFBB9B /* MAPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3351FC863B300EFBB9B /* MAPViewController.m */; };
+		8351D3381FC863B300EFBB9B /* MAPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3361FC863B300EFBB9B /* MAPViewController.xib */; };
+		8351D33C1FC9CCAB00EFBB9B /* map_icon_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3391FC9CCAA00EFBB9B /* map_icon_normal@2x.png */; };
+		8351D33E1FC9CCAB00EFBB9B /* home_icon_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8351D33B1FC9CCAB00EFBB9B /* home_icon_normal@2x.png */; };
+		8351D3401FC9CE3300EFBB9B /* my_icon_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8351D33F1FC9CE3300EFBB9B /* my_icon_normal@2x.png */; };
+		8351D3481FC9D02100EFBB9B /* my_icon_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3471FC9D02100EFBB9B /* my_icon_selected.png */; };
 		8382462C1FC556C800995AB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8382462B1FC556C800995AB9 /* AppDelegate.m */; };
-		8382462F1FC556C800995AB9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8382462E1FC556C800995AB9 /* ViewController.m */; };
 		838246321FC556C800995AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838246301FC556C800995AB9 /* Main.storyboard */; };
 		838246341FC556C800995AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838246331FC556C800995AB9 /* Assets.xcassets */; };
 		838246371FC556C800995AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838246351FC556C800995AB9 /* LaunchScreen.storyboard */; };
@@ -37,11 +49,25 @@
 
 /* Begin PBXFileReference section */
 		8351D2AB1FC80FF300EFBB9B /* icon_lanuch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_lanuch.png; sourceTree = "<group>"; };
+		8351D2F01FC81BCC00EFBB9B /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		8351D2F11FC81BCC00EFBB9B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		8351D2F21FC81BCC00EFBB9B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		8351D31C1FC81C2F00EFBB9B /* MYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYViewController.m; sourceTree = "<group>"; };
+		8351D31D1FC81C2F00EFBB9B /* MYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYViewController.h; sourceTree = "<group>"; };
+		8351D31E1FC81C2F00EFBB9B /* MYViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYViewController.xib; sourceTree = "<group>"; };
+		8351D3241FC820B600EFBB9B /* feiji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feiji.png; sourceTree = "<group>"; };
+		8351D3251FC820B600EFBB9B /* map_icon_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_icon_selected.png; sourceTree = "<group>"; };
+		8351D3261FC820B600EFBB9B /* home_icon_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_icon_selected.png; sourceTree = "<group>"; };
+		8351D3331FC8632100EFBB9B /* MAPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPViewController.h; sourceTree = "<group>"; };
+		8351D3351FC863B300EFBB9B /* MAPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPViewController.m; sourceTree = "<group>"; };
+		8351D3361FC863B300EFBB9B /* MAPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MAPViewController.xib; sourceTree = "<group>"; };
+		8351D3391FC9CCAA00EFBB9B /* map_icon_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_icon_normal@2x.png"; sourceTree = "<group>"; };
+		8351D33B1FC9CCAB00EFBB9B /* home_icon_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_icon_normal@2x.png"; sourceTree = "<group>"; };
+		8351D33F1FC9CE3300EFBB9B /* my_icon_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my_icon_normal@2x.png"; sourceTree = "<group>"; };
+		8351D3471FC9D02100EFBB9B /* my_icon_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my_icon_selected.png; sourceTree = "<group>"; };
 		838246271FC556C800995AB9 /* TBGF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBGF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8382462A1FC556C800995AB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8382462B1FC556C800995AB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8382462D1FC556C800995AB9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8382462E1FC556C800995AB9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		838246311FC556C800995AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		838246331FC556C800995AB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		838246361FC556C800995AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,7 +109,6 @@
 		8351D2AA1FC80FF300EFBB9B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8351D2AB1FC80FF300EFBB9B /* icon_lanuch.png */,
 				8351D2AC1FC80FF300EFBB9B /* images */,
 			);
 			path = Resources;
@@ -92,8 +117,46 @@
 		8351D2AC1FC80FF300EFBB9B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				8351D3471FC9D02100EFBB9B /* my_icon_selected.png */,
+				8351D33F1FC9CE3300EFBB9B /* my_icon_normal@2x.png */,
+				8351D3241FC820B600EFBB9B /* feiji.png */,
+				8351D33B1FC9CCAB00EFBB9B /* home_icon_normal@2x.png */,
+				8351D3391FC9CCAA00EFBB9B /* map_icon_normal@2x.png */,
+				8351D3261FC820B600EFBB9B /* home_icon_selected.png */,
+				8351D3251FC820B600EFBB9B /* map_icon_selected.png */,
+				8351D2AB1FC80FF300EFBB9B /* icon_lanuch.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		8351D32F1FC8621D00EFBB9B /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				8351D2F11FC81BCC00EFBB9B /* RootViewController.h */,
+				8351D2F21FC81BCC00EFBB9B /* RootViewController.m */,
+				8351D2F01FC81BCC00EFBB9B /* RootViewController.xib */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		8351D3301FC8623E00EFBB9B /* 地图 */ = {
+			isa = PBXGroup;
+			children = (
+				8351D3331FC8632100EFBB9B /* MAPViewController.h */,
+				8351D3351FC863B300EFBB9B /* MAPViewController.m */,
+				8351D3361FC863B300EFBB9B /* MAPViewController.xib */,
+			);
+			path = "地图";
+			sourceTree = "<group>";
+		};
+		8351D3311FC8624A00EFBB9B /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				8351D31D1FC81C2F00EFBB9B /* MYViewController.h */,
+				8351D31C1FC81C2F00EFBB9B /* MYViewController.m */,
+				8351D31E1FC81C2F00EFBB9B /* MYViewController.xib */,
+			);
+			path = "我的";
 			sourceTree = "<group>";
 		};
 		8382461E1FC556C700995AB9 = {
@@ -120,10 +183,11 @@
 			isa = PBXGroup;
 			children = (
 				8351D2AA1FC80FF300EFBB9B /* Resources */,
+				8351D3311FC8624A00EFBB9B /* 我的 */,
+				8351D3301FC8623E00EFBB9B /* 地图 */,
+				8351D32F1FC8621D00EFBB9B /* 首页 */,
 				8382462A1FC556C800995AB9 /* AppDelegate.h */,
 				8382462B1FC556C800995AB9 /* AppDelegate.m */,
-				8382462D1FC556C800995AB9 /* ViewController.h */,
-				8382462E1FC556C800995AB9 /* ViewController.m */,
 				838246301FC556C800995AB9 /* Main.storyboard */,
 				838246331FC556C800995AB9 /* Assets.xcassets */,
 				838246351FC556C800995AB9 /* LaunchScreen.storyboard */,
@@ -262,7 +326,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8351D32B1FC820B600EFBB9B /* feiji.png in Resources */,
 				838246371FC556C800995AB9 /* LaunchScreen.storyboard in Resources */,
+				8351D33C1FC9CCAB00EFBB9B /* map_icon_normal@2x.png in Resources */,
+				8351D31A1FC81BCD00EFBB9B /* RootViewController.xib in Resources */,
+				8351D3401FC9CE3300EFBB9B /* my_icon_normal@2x.png in Resources */,
+				8351D32C1FC820B600EFBB9B /* map_icon_selected.png in Resources */,
+				8351D33E1FC9CCAB00EFBB9B /* home_icon_normal@2x.png in Resources */,
+				8351D32D1FC820B600EFBB9B /* home_icon_selected.png in Resources */,
+				8351D3381FC863B300EFBB9B /* MAPViewController.xib in Resources */,
+				8351D3481FC9D02100EFBB9B /* my_icon_selected.png in Resources */,
+				8351D3201FC81C2F00EFBB9B /* MYViewController.xib in Resources */,
 				8351D2AD1FC80FF400EFBB9B /* icon_lanuch.png in Resources */,
 				838246341FC556C800995AB9 /* Assets.xcassets in Resources */,
 				838246321FC556C800995AB9 /* Main.storyboard in Resources */,
@@ -290,9 +364,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8382462F1FC556C800995AB9 /* ViewController.m in Sources */,
+				8351D31B1FC81BCD00EFBB9B /* RootViewController.m in Sources */,
 				8382463A1FC556C800995AB9 /* main.m in Sources */,
 				8382462C1FC556C800995AB9 /* AppDelegate.m in Sources */,
+				8351D3371FC863B300EFBB9B /* MAPViewController.m in Sources */,
+				8351D31F1FC81C2F00EFBB9B /* MYViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
