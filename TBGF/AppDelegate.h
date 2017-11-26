@@ -7,13 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+@interface AppDelegate : UIResponder<UIApplicationDelegate> {
+    UINavigationController *navigationController;
+    BMKMapManager* _mapManager;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) UINavigationController *navController;
  
 @property (strong, nonatomic) UITabBarController *tabBarController;
+
 @end
 

@@ -7,13 +7,13 @@
 //
 
 #import "MAPViewController.h"
+#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
 
-@interface MAPViewController ()
+@interface MAPViewController ()<BMKMapViewDelegate>
 
 @end
-
 @implementation MAPViewController
-
+@synthesize mapView=_mapView;
 -(id)initWithNibName:(NSString *)nibNameOrNil
               bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,6 +28,8 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    BMKMapView* mapView = [[BMKMapView alloc]initWithFrame:self.view.bounds];
+    self.view = mapView;
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -45,5 +47,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+-(void)viewWillAppear:(BOOL)animated
+{
+    [_mapView viewWillAppear];
+    _mapView.delegate = self; // 此处记得不用的时候需要置nil，否则影响内存的释放
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [_mapView viewWillDisappear];
+    _mapView.delegate = nil; // 不用时，置nil
+}
 
 @end
