@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "RootViewController.h"
 #import "MYViewController.h"
-#import "MAPViewController.h"
+#import "MapViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -26,35 +26,41 @@
         NSLog(@"manager start failed!");
     }
     
-    // 创建程序窗口
-    self.window = [[UIWindow alloc] initWithFrame:
-                   [[UIScreen mainScreen] bounds]];
-    // 创建UITabBarController
-    self.tabBarController = [[UITabBarController alloc] init];
-    //创建导航控制器
-    self.navController = [[UINavigationController alloc] init];
-    //创建rootview
-    RootViewController *rootView = [[RootViewController alloc] init];
-    [self.navController pushViewController:rootView animated:YES];
-    
-   
-    // 创建MAPViewController对象
-    MAPViewController* mapController = [[MAPViewController alloc]
-                                        initWithNibName:@"MAPViewController" bundle:nil];
-    
-    // 创建MYViewController对象
-    MYViewController* myController = [[MYViewController alloc]
-                                        initWithNibName:@"MYViewController" bundle:nil];
-    // 为UITabBarController设置多个视图控制器
-    // 如果希望UITabBarController显示几个Tab页，
-    // 就为UITabBarController添加几个视图控制器
-    self.tabBarController.viewControllers = [NSArray
-                                             arrayWithObjects:self.navController
-                                             , mapController,myController,nil];
-    // 将UITabBarController设置为窗口的根控制器
-    self.window.rootViewController = self.tabBarController;
-    [self.window makeKeyAndVisible];
+    MainTabViewController *mainVC = [[MainTabViewController alloc] init];
+    self.window.rootViewController = mainVC;
     return YES;
+    
+//    // 创建程序窗口
+//    self.window = [[UIWindow alloc] initWithFrame:
+//                   [[UIScreen mainScreen] bounds]];
+//    // 创建UITabBarController
+//    self.tabBarController = [[UITabBarController alloc] init];
+//    //创建导航控制器
+//
+//    self.navController = [[UINavigationController alloc] init];
+//    //创建rootview
+//    RootViewController *rootView = [[RootViewController alloc] init];
+//    [self.navController pushViewController:rootView animated:YES];
+//
+//    // 创建MAPViewController对象
+//    MapViewController* mapController = [[MapViewController alloc]
+//                                        initWithNibName:@"MapViewController" bundle:nil];
+//
+//    UINavigationController *secondNC = [[UINavigationController alloc] initWithRootViewController:mapController];
+//    // 创建MYViewController对象
+//    MYViewController* myController = [[MYViewController alloc]
+//                                        initWithNibName:@"MYViewController" bundle:nil];
+//
+//    // 为UITabBarController设置多个视图控制器
+//    // 如果希望UITabBarController显示几个Tab页，
+//    // 就为UITabBarController添加几个视图控制器
+//    self.tabBarController.viewControllers = [NSArray
+//                                             arrayWithObjects:self.navController
+//                                             , mapController,myController,nil];
+//    // 将UITabBarController设置为窗口的根控制器
+//    self.window.rootViewController = self.tabBarController;
+//    [self.window makeKeyAndVisible];
+//    return YES;
 }
 
 

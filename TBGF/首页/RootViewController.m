@@ -31,15 +31,13 @@
 - (void)viewDidLoad {
     [NSThread sleepForTimeInterval:3];
     [super viewDidLoad];
-    //自定义title
-    UIButton *button = [UIButton buttonWithType: UIButtonTypeRoundedRect];
-    [button setTitle: @"首页" forState: UIControlStateNormal];
-    [button sizeToFit];
-    //标题view
-    self.navigationItem.titleView = button;
-    //返回view
+    // 设置title
+    self.title = @"首页";
+   
     
-   // [self.myTableView reloadData];
+    [_dongtai setUserInteractionEnabled:YES];
+    [_dongtai addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickCategory:)]];
+    
     
 }
 - (void)viewWillAppea:(BOOL)animated
@@ -51,6 +49,22 @@
     
     [super viewWillDisappear:animated];
 }
-
+-(void)clickCategory:(UITapGestureRecognizer* )gestureRecognizer
+{
+    UIView *viewClicked=[gestureRecognizer view];
+    if (viewClicked==_dongtai) {
+        NSLog(@"dongtai");
+//        BaiduMapViewController *baiduMapController = [[BaiduMapViewController alloc]init];
+//
+//        UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
+//        temporaryBarButtonItem.title = @"地图";
+//        self.navigationItem.backBarButtonItem = temporaryBarButtonItem;
+//        [self.navigationController pushViewController:baiduMapController animated:NO];
+        
+    }else if(viewClicked==_dongtai)
+    {
+        NSLog(@"imageView2");
+    }
+}
 
 @end

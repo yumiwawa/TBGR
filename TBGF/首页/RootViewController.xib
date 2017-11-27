@@ -5,11 +5,13 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
             <connections>
+                <outlet property="dongtai" destination="aLt-sa-JVQ" id="2oh-h4-7XN"/>
                 <outlet property="view" destination="iN0-l3-epB" id="z4c-mm-kJm"/>
             </connections>
         </placeholder>
@@ -18,37 +20,139 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rsh-5O-805">
-                    <rect key="frame" x="4" y="10" width="367" height="647"/>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </tableView>
+                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Oy8-tD-gvS">
+                    <rect key="frame" x="29" y="153" width="316" height="361.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="center" semanticContentAttribute="forceLeftToRight" ambiguous="YES" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jq6-cS-bYN">
+                            <rect key="frame" x="0.0" y="0.0" width="316" height="120.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UE0-Q9-YST">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="120.5"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="guofangdongtai.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aLt-sa-JVQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="国防动态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7Q-4D-J3t" userLabel="地图服务">
+                                            <rect key="frame" x="0.0" y="100" width="100" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Z1q-ta-eOR">
+                                    <rect key="frame" x="108" y="0.0" width="100" height="120.5"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="guofangzhishi.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Tfm-Jj-hoh">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="国防知识" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBO-d1-fK5" userLabel="便民服务">
+                                            <rect key="frame" x="0.0" y="100" width="100" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qaE-jl-mB0">
+                                    <rect key="frame" x="216" y="0.0" width="100" height="120.5"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="qunzhongxinsheng.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="h6J-XH-UVC">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="群众心声" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcG-xe-jX6" userLabel="便民服务">
+                                            <rect key="frame" x="0.0" y="100" width="100" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="center" semanticContentAttribute="forceLeftToRight" ambiguous="YES" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NJg-Hy-Qqm">
+                            <rect key="frame" x="0.0" y="120.5" width="316" height="120.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XDK-O9-e4n">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="120.5"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="jinjiqiujiu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zNu-c5-Ybe">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="紧急求救" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0g5-za-3G5" userLabel="地图服务">
+                                            <rect key="frame" x="0.0" y="100" width="100" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7F8-7U-PXW">
+                                    <rect key="frame" x="108" y="0.0" width="100" height="120.5"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="junshiyouxi.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="u0f-hi-fwb">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="军事游戏" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fR-vL-4Qb" userLabel="便民服务">
+                                            <rect key="frame" x="0.0" y="100" width="100" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kG0-WH-5Tg">
+                                    <rect key="frame" x="216" y="0.0" width="100" height="120.5"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="yingjishusan.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WNW-Os-IZh">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="应急救援" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymf-oC-pjP" userLabel="便民服务">
+                                            <rect key="frame" x="0.0" y="100" width="100" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="center" semanticContentAttribute="forceLeftToRight" ambiguous="YES" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="C0h-5h-Z9g">
+                            <rect key="frame" x="0.0" y="241" width="316" height="120.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cO9-aj-Gk8">
+                                    <rect key="frame" x="0.0" y="0.0" width="316" height="120.5"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="shangqihezuo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pou-Yx-gB9">
+                                            <rect key="frame" x="0.0" y="0.0" width="316" height="100"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="商企合作" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8m-JC-I9j" userLabel="地图服务">
+                                            <rect key="frame" x="0.0" y="100" width="316" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="rsh-5O-805" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="0qF-4o-aB2"/>
-                <constraint firstItem="rsh-5O-805" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5Cl-b5-H8A"/>
-                <constraint firstItem="rsh-5O-805" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CjH-5d-XoH"/>
-                <constraint firstItem="rsh-5O-805" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="m2d-Dx-ern"/>
-            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="0qF-4o-aB2"/>
-                    <exclude reference="5Cl-b5-H8A"/>
-                    <exclude reference="CjH-5d-XoH"/>
-                    <exclude reference="m2d-Dx-ern"/>
-                </mask>
-            </variation>
-            <variation key="widthClass=compact">
-                <mask key="constraints">
-                    <include reference="0qF-4o-aB2"/>
-                    <include reference="5Cl-b5-H8A"/>
-                    <include reference="CjH-5d-XoH"/>
-                    <include reference="m2d-Dx-ern"/>
-                </mask>
-            </variation>
             <point key="canvasLocation" x="277" y="203"/>
         </view>
     </objects>
+    <resources>
+        <image name="guofangdongtai.jpg" width="100" height="100"/>
+        <image name="guofangzhishi.jpg" width="100" height="100"/>
+        <image name="jinjiqiujiu.jpg" width="100" height="100"/>
+        <image name="junshiyouxi.jpg" width="100" height="100"/>
+        <image name="qunzhongxinsheng.jpg" width="100" height="100"/>
+        <image name="shangqihezuo.jpg" width="100" height="100"/>
+        <image name="yingjishusan.jpg" width="100" height="100"/>
+    </resources>
 </document>

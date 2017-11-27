@@ -9,8 +9,8 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "BaiduMapViewController.h"
 @interface RootViewController : UIViewController
-
-@property (strong, nonatomic) IBOutlet UITableView *myTableView;
+@property (strong, nonatomic) IBOutlet UIImageView *dongtai;
 
 @end

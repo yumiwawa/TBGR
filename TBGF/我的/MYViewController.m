@@ -17,22 +17,12 @@
 
 
 
--(id)initWithNibName:(NSString *)nibNameOrNil
-              bundle:(NSBundle *)nibBundleOrNil
-{
-    if ([super initWithNibName:nibNameOrNil bundle:nibBundleOrNil] != nil)
-    {
-        // 为该控制器设置标签项
-        self.tabBarItem = [[UITabBarItem alloc]
-                           initWithTitle:@"我"
-                           image:[UIImage imageNamed:@"my_icon_normal.png"] tag:3];
-        //设置徽标
-        self.tabBarItem.badgeValue=@"牛";
-    }
-    return self;
-}
+ 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //自定义title
+    // 设置title
+    self.title = @"我";
 }
 @end

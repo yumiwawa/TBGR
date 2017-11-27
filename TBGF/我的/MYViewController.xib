@@ -18,52 +18,14 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="zhangxiaodong_1987@126.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZaR-wP-hfd">
-                    <rect key="frame" x="89" y="236" width="240" height="31"/>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="240" id="GCV-yI-jQc"/>
-                        <constraint firstAttribute="height" constant="31" id="OS6-Tv-z1y"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="GCV-yI-jQc"/>
-                            <exclude reference="OS6-Tv-z1y"/>
-                        </mask>
-                    </variation>
-                    <variation key="widthClass=compact">
-                        <mask key="constraints">
-                            <include reference="GCV-yI-jQc"/>
-                            <include reference="OS6-Tv-z1y"/>
-                        </mask>
-                    </variation>
-                </textView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vy-oS-WyT">
+                    <rect key="frame" x="166" y="318" width="44" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="ZaR-wP-hfd" secondAttribute="trailing" constant="46" id="hiS-7r-NJW"/>
-                <constraint firstItem="ZaR-wP-hfd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="236" id="uTE-Il-T8B"/>
-            </constraints>
-            <variation key="default">
-                <mask key="subviews">
-                    <exclude reference="ZaR-wP-hfd"/>
-                </mask>
-                <mask key="constraints">
-                    <exclude reference="hiS-7r-NJW"/>
-                    <exclude reference="uTE-Il-T8B"/>
-                </mask>
-            </variation>
-            <variation key="widthClass=compact">
-                <mask key="subviews">
-                    <include reference="ZaR-wP-hfd"/>
-                </mask>
-                <mask key="constraints">
-                    <include reference="hiS-7r-NJW"/>
-                    <include reference="uTE-Il-T8B"/>
-                </mask>
-            </variation>
+            <point key="canvasLocation" x="32.5" y="71.5"/>
         </view>
     </objects>
 </document>
