@@ -1,19 +1,20 @@
 //
-//  MAPViewController.m
+//  MapViewController.m
 //  TBGF
 //
-//  Created by 张晓东 on 2017/11/24.
+//  Created by 张晓东 on 2017/11/27.
 //  Copyright © 2017年 张晓东. All rights reserved.
 //
 
-#import "MAPViewController.h"
-#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
+#import "MapViewController.h"
 
-@interface MAPViewController ()<BMKMapViewDelegate>
+@interface MapViewController ()
 
 @end
-@implementation MAPViewController
-@synthesize mapView=_mapView;
+
+@implementation MapViewController
+
+
 -(id)initWithNibName:(NSString *)nibNameOrNil
               bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,15 +23,24 @@
         // 为该控制器设置标签项
         self.tabBarItem = [[UITabBarItem alloc]
                            initWithTitle:@"地图"
-                           image:[UIImage imageNamed:@"map_icon_normal.png"] tag:2];
+                           image:[UIImage imageNamed:@"my_icon_normal.png"] tag:3];
+        //设置徽标
+        self.tabBarItem.badgeValue=@"牛";
     }
     return self;
 }
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    BMKMapView* mapView = [[BMKMapView alloc]initWithFrame:self.view.bounds];
-    self.view = mapView;
-    // Do any additional setup after loading the view from its nib.
+    // Do any additional setup after loading the view from its nib
+    // 设置title
+    self.title = @"地图";
+    
+    [_ditu setUserInteractionEnabled:YES];
+    [_ditu addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickCategory:)]];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,24 +48,31 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
--(void)viewWillAppear:(BOOL)animated
+-(void)clickCategory:(UITapGestureRecognizer* )gestureRecognizer
 {
-    [_mapView viewWillAppear];
-    _mapView.delegate = self; // 此处记得不用的时候需要置nil，否则影响内存的释放
-}
--(void)viewWillDisappear:(BOOL)animated
-{
-    [_mapView viewWillDisappear];
-    _mapView.delegate = nil; // 不用时，置nil
+    UIView *viewClicked=[gestureRecognizer view];
+    if (viewClicked==_ditu) {
+        NSLog(@"ditu");
+        BaiduMapViewController *baiduMapController = [[BaiduMapViewController alloc]init];
+        baiduMapController.hidesBottomBarWhenPushed = YES;
+        UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
+        temporaryBarButtonItem.title = @"地图";
+        self.navigationItem.backBarButtonItem = temporaryBarButtonItem;
+        [self.navigationController pushViewController:baiduMapController animated:NO];
+        if(self.navigationController==nil)
+        {
+               NSLog(@"navigationController nil");
+        }
+        
+//        BaiduMapViewController *baiduMapController = [[BaiduMapViewController alloc]init];
+//        UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
+//        temporaryBarButtonItem.title = @"地图";
+//        self.navigationItem.backBarButtonItem = temporaryBarButtonItem;
+//        [self.navigationController pushViewController:baiduMapController animated:NO];
+    }else if(viewClicked==_ditu)
+    {
+        NSLog(@"imageView2");
+    }
 }
 
 @end
