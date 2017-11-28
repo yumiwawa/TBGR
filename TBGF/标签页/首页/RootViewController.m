@@ -29,7 +29,6 @@
     return self;
 }
 - (void)viewDidLoad {
-    [NSThread sleepForTimeInterval:3];
     [super viewDidLoad];
     // 设置title
     self.title = @"首页";

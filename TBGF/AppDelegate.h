@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MainTabViewController.h"
+#import "LoginViewController.h"
 #import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
 @interface AppDelegate : UIResponder<UIApplicationDelegate> {
     BMKMapManager* _mapManager;

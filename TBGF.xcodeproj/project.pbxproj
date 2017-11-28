@@ -35,6 +35,14 @@
 		8351D37B1FCBE4E600EFBB9B /* shangqihezuo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3701FCBE4E500EFBB9B /* shangqihezuo.jpg */; };
 		8351D37C1FCBE4E600EFBB9B /* sheshizhuangtai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3711FCBE4E600EFBB9B /* sheshizhuangtai.jpg */; };
 		8351D38D1FCC27C500EFBB9B /* MainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D38C1FCC27C500EFBB9B /* MainTabViewController.m */; };
+		8351D3921FCCEF5800EFBB9B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3901FCCEF5800EFBB9B /* LoginViewController.m */; };
+		8351D3931FCCEF5800EFBB9B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3911FCCEF5800EFBB9B /* LoginViewController.xib */; };
+		8351D39B1FCD48D100EFBB9B /* PhoneVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3991FCD48D100EFBB9B /* PhoneVerifyViewController.m */; };
+		8351D39C1FCD48D100EFBB9B /* PhoneVerifyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D39A1FCD48D100EFBB9B /* PhoneVerifyViewController.xib */; };
+		8351D3A11FCD4E5700EFBB9B /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D39F1FCD4E5700EFBB9B /* RegisterViewController.m */; };
+		8351D3A21FCD4E5700EFBB9B /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3A01FCD4E5700EFBB9B /* RegisterViewController.xib */; };
+		8351D3A71FCD50A800EFBB9B /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3A51FCD50A800EFBB9B /* ChangePasswordViewController.m */; };
+		8351D3A81FCD50A800EFBB9B /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3A61FCD50A800EFBB9B /* ChangePasswordViewController.xib */; };
 		8382462C1FC556C800995AB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8382462B1FC556C800995AB9 /* AppDelegate.m */; };
 		838246321FC556C800995AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838246301FC556C800995AB9 /* Main.storyboard */; };
 		838246341FC556C800995AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838246331FC556C800995AB9 /* Assets.xcassets */; };
@@ -95,6 +103,18 @@
 		8351D3711FCBE4E600EFBB9B /* sheshizhuangtai.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sheshizhuangtai.jpg; sourceTree = "<group>"; };
 		8351D38B1FCC27C500EFBB9B /* MainTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabViewController.h; sourceTree = "<group>"; };
 		8351D38C1FCC27C500EFBB9B /* MainTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabViewController.m; sourceTree = "<group>"; };
+		8351D38F1FCCEF5800EFBB9B /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		8351D3901FCCEF5800EFBB9B /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		8351D3911FCCEF5800EFBB9B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		8351D3981FCD48D100EFBB9B /* PhoneVerifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneVerifyViewController.h; sourceTree = "<group>"; };
+		8351D3991FCD48D100EFBB9B /* PhoneVerifyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneVerifyViewController.m; sourceTree = "<group>"; };
+		8351D39A1FCD48D100EFBB9B /* PhoneVerifyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneVerifyViewController.xib; sourceTree = "<group>"; };
+		8351D39E1FCD4E5700EFBB9B /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		8351D39F1FCD4E5700EFBB9B /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		8351D3A01FCD4E5700EFBB9B /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		8351D3A41FCD50A800EFBB9B /* ChangePasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
+		8351D3A51FCD50A800EFBB9B /* ChangePasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
+		8351D3A61FCD50A800EFBB9B /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
 		838246271FC556C800995AB9 /* TBGF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBGF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8382462A1FC556C800995AB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8382462B1FC556C800995AB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -230,13 +250,59 @@
 			path = "地图";
 			sourceTree = "<group>";
 		};
-		8351D37D1FCC21A900EFBB9B /* 第一页 */ = {
+		8351D37D1FCC21A900EFBB9B /* 标签页 */ = {
 			isa = PBXGroup;
 			children = (
+				8351D32F1FC8621D00EFBB9B /* 首页 */,
+				8351D34B1FCBB0D600EFBB9B /* 地图 */,
+				8351D3311FC8624A00EFBB9B /* 我的 */,
 				8351D38B1FCC27C500EFBB9B /* MainTabViewController.h */,
 				8351D38C1FCC27C500EFBB9B /* MainTabViewController.m */,
 			);
-			path = "第一页";
+			path = "标签页";
+			sourceTree = "<group>";
+		};
+		8351D38E1FCCEF3100EFBB9B /* 登陆 */ = {
+			isa = PBXGroup;
+			children = (
+				8351D3A31FCD507C00EFBB9B /* 忘记密码 */,
+				8351D3951FCD3D7F00EFBB9B /* 手机号码验证 */,
+				8351D38F1FCCEF5800EFBB9B /* LoginViewController.h */,
+				8351D3901FCCEF5800EFBB9B /* LoginViewController.m */,
+				8351D3911FCCEF5800EFBB9B /* LoginViewController.xib */,
+			);
+			path = "登陆";
+			sourceTree = "<group>";
+		};
+		8351D3951FCD3D7F00EFBB9B /* 手机号码验证 */ = {
+			isa = PBXGroup;
+			children = (
+				8351D39D1FCD4E3500EFBB9B /* 注册界面 */,
+				8351D3981FCD48D100EFBB9B /* PhoneVerifyViewController.h */,
+				8351D3991FCD48D100EFBB9B /* PhoneVerifyViewController.m */,
+				8351D39A1FCD48D100EFBB9B /* PhoneVerifyViewController.xib */,
+			);
+			path = "手机号码验证";
+			sourceTree = "<group>";
+		};
+		8351D39D1FCD4E3500EFBB9B /* 注册界面 */ = {
+			isa = PBXGroup;
+			children = (
+				8351D39E1FCD4E5700EFBB9B /* RegisterViewController.h */,
+				8351D39F1FCD4E5700EFBB9B /* RegisterViewController.m */,
+				8351D3A01FCD4E5700EFBB9B /* RegisterViewController.xib */,
+			);
+			path = "注册界面";
+			sourceTree = "<group>";
+		};
+		8351D3A31FCD507C00EFBB9B /* 忘记密码 */ = {
+			isa = PBXGroup;
+			children = (
+				8351D3A41FCD50A800EFBB9B /* ChangePasswordViewController.h */,
+				8351D3A51FCD50A800EFBB9B /* ChangePasswordViewController.m */,
+				8351D3A61FCD50A800EFBB9B /* ChangePasswordViewController.xib */,
+			);
+			path = "忘记密码";
 			sourceTree = "<group>";
 		};
 		8382461E1FC556C700995AB9 = {
@@ -264,11 +330,9 @@
 		838246291FC556C800995AB9 /* TBGF */ = {
 			isa = PBXGroup;
 			children = (
-				8351D37D1FCC21A900EFBB9B /* 第一页 */,
-				8351D3311FC8624A00EFBB9B /* 我的 */,
-				8351D34B1FCBB0D600EFBB9B /* 地图 */,
+				8351D38E1FCCEF3100EFBB9B /* 登陆 */,
+				8351D37D1FCC21A900EFBB9B /* 标签页 */,
 				8351D2AA1FC80FF300EFBB9B /* Resources */,
-				8351D32F1FC8621D00EFBB9B /* 首页 */,
 				8382462A1FC556C800995AB9 /* AppDelegate.h */,
 				8382462B1FC556C800995AB9 /* AppDelegate.m */,
 				838246301FC556C800995AB9 /* Main.storyboard */,
@@ -418,6 +482,7 @@
 				838246371FC556C800995AB9 /* LaunchScreen.storyboard in Resources */,
 				8351D33C1FC9CCAB00EFBB9B /* map_icon_normal@2x.png in Resources */,
 				8351D31A1FC81BCD00EFBB9B /* RootViewController.xib in Resources */,
+				8351D3A81FCD50A800EFBB9B /* ChangePasswordViewController.xib in Resources */,
 				8351D3771FCBE4E600EFBB9B /* yingjishusan.jpg in Resources */,
 				8351D37C1FCBE4E600EFBB9B /* sheshizhuangtai.jpg in Resources */,
 				8351D3781FCBE4E600EFBB9B /* jinjiqiujiu.jpg in Resources */,
@@ -430,11 +495,14 @@
 				8351D3481FC9D02100EFBB9B /* my_icon_selected.png in Resources */,
 				8351D3201FC81C2F00EFBB9B /* MYViewController.xib in Resources */,
 				8351D2AD1FC80FF400EFBB9B /* icon_lanuch.png in Resources */,
+				8351D3931FCCEF5800EFBB9B /* LoginViewController.xib in Resources */,
 				8351D3721FCBE4E600EFBB9B /* junshiyouxi.jpg in Resources */,
 				8351D37A1FCBE4E600EFBB9B /* guofangzhishi.jpg in Resources */,
 				838246341FC556C800995AB9 /* Assets.xcassets in Resources */,
 				8351D3761FCBE4E600EFBB9B /* qunzhongxinsheng.jpg in Resources */,
+				8351D3A21FCD4E5700EFBB9B /* RegisterViewController.xib in Resources */,
 				8351D3501FCBB11900EFBB9B /* MapViewController.xib in Resources */,
+				8351D39C1FCD48D100EFBB9B /* PhoneVerifyViewController.xib in Resources */,
 				838246321FC556C800995AB9 /* Main.storyboard in Resources */,
 				8351D37B1FCBE4E600EFBB9B /* shangqihezuo.jpg in Resources */,
 			);
@@ -515,11 +583,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8351D39B1FCD48D100EFBB9B /* PhoneVerifyViewController.m in Sources */,
 				8351D31B1FC81BCD00EFBB9B /* RootViewController.m in Sources */,
 				8382463A1FC556C800995AB9 /* main.m in Sources */,
+				8351D3921FCCEF5800EFBB9B /* LoginViewController.m in Sources */,
 				8382462C1FC556C800995AB9 /* AppDelegate.m in Sources */,
+				8351D3A11FCD4E5700EFBB9B /* RegisterViewController.m in Sources */,
 				8351D34F1FCBB11900EFBB9B /* MapViewController.m in Sources */,
 				8351D38D1FCC27C500EFBB9B /* MainTabViewController.m in Sources */,
+				8351D3A71FCD50A800EFBB9B /* ChangePasswordViewController.m in Sources */,
 				8351D3371FC863B300EFBB9B /* BaiduMapViewController.m in Sources */,
 				8351D31F1FC81C2F00EFBB9B /* MYViewController.m in Sources */,
 			);
