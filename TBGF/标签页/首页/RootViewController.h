@@ -12,5 +12,6 @@
 #import "BaiduMapViewController.h"
 @interface RootViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *dongtai;
+@property (strong, nonatomic) IBOutlet UIImageView *gameImageView;
 
 @end

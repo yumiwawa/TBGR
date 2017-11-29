@@ -43,6 +43,10 @@
     // 4.图标加入到第一页的导航控制器上
     firstNC.tabBarItem = firstTabBarItem;
     
+    [firstNC.navigationBar  setBackgroundImage:[self createImageWithColor:[UIColor clearColor]] forBarMetrics:UIBarMetricsDefault];
+    [firstNC.navigationBar  setShadowImage:[self createImageWithColor:[UIColor clearColor]]];
+    //    [self.navigationController.navigationBar  setTintColor:[UIColor whiteColor]];
+    [firstNC.navigationBar  setTranslucent:YES];
     
    
     //设置导航栏
@@ -83,7 +87,18 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(UIImage *) createImageWithColor: (UIColor *) color
+{
+    CGRect rect=CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return theImage;
+}
 /*
 #pragma mark - Navigation
 

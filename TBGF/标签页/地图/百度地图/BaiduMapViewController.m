@@ -30,6 +30,7 @@
     [super viewDidLoad];
     BMKMapView* mapView = [[BMKMapView alloc]initWithFrame:self.view.bounds];
     self.view = mapView;
+    
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -57,5 +58,6 @@
     [_mapView viewWillDisappear];
     _mapView.delegate = nil; // 不用时，置nil
 }
+
 
 @end

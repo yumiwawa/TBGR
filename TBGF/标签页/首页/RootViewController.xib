@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
             <connections>
                 <outlet property="dongtai" destination="aLt-sa-JVQ" id="2oh-h4-7XN"/>
+                <outlet property="gameImageView" destination="u0f-hi-fwb" id="LBg-SO-fFf"/>
                 <outlet property="view" destination="iN0-l3-epB" id="z4c-mm-kJm"/>
             </connections>
         </placeholder>

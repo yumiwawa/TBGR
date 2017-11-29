@@ -43,6 +43,8 @@
 		8351D3A21FCD4E5700EFBB9B /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3A01FCD4E5700EFBB9B /* RegisterViewController.xib */; };
 		8351D3A71FCD50A800EFBB9B /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3A51FCD50A800EFBB9B /* ChangePasswordViewController.m */; };
 		8351D3A81FCD50A800EFBB9B /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3A61FCD50A800EFBB9B /* ChangePasswordViewController.xib */; };
+		8351D3C31FCE5A7200EFBB9B /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3C11FCE5A7200EFBB9B /* GameViewController.m */; };
+		8351D3C41FCE5A7200EFBB9B /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3C21FCE5A7200EFBB9B /* GameViewController.xib */; };
 		8382462C1FC556C800995AB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8382462B1FC556C800995AB9 /* AppDelegate.m */; };
 		838246321FC556C800995AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838246301FC556C800995AB9 /* Main.storyboard */; };
 		838246341FC556C800995AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838246331FC556C800995AB9 /* Assets.xcassets */; };
@@ -115,6 +117,10 @@
 		8351D3A41FCD50A800EFBB9B /* ChangePasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
 		8351D3A51FCD50A800EFBB9B /* ChangePasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
 		8351D3A61FCD50A800EFBB9B /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
+		8351D3AF1FCE52C800EFBB9B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		8351D3C01FCE5A7200EFBB9B /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		8351D3C11FCE5A7200EFBB9B /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		8351D3C21FCE5A7200EFBB9B /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		838246271FC556C800995AB9 /* TBGF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBGF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8382462A1FC556C800995AB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8382462B1FC556C800995AB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 		7369D0581882CE4BCE1EB4F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8351D3AF1FCE52C800EFBB9B /* WebKit.framework */,
 				FC70BE31CDF73A51A156BB81 /* libPods-TBGF.a */,
 			);
 			name = Frameworks;
@@ -213,6 +220,7 @@
 		8351D32F1FC8621D00EFBB9B /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				8351D3A91FCD656A00EFBB9B /* 游戏 */,
 				8351D2F11FC81BCC00EFBB9B /* RootViewController.h */,
 				8351D2F21FC81BCC00EFBB9B /* RootViewController.m */,
 				8351D2F01FC81BCC00EFBB9B /* RootViewController.xib */,
@@ -303,6 +311,16 @@
 				8351D3A61FCD50A800EFBB9B /* ChangePasswordViewController.xib */,
 			);
 			path = "忘记密码";
+			sourceTree = "<group>";
+		};
+		8351D3A91FCD656A00EFBB9B /* 游戏 */ = {
+			isa = PBXGroup;
+			children = (
+				8351D3C01FCE5A7200EFBB9B /* GameViewController.h */,
+				8351D3C11FCE5A7200EFBB9B /* GameViewController.m */,
+				8351D3C21FCE5A7200EFBB9B /* GameViewController.xib */,
+			);
+			path = "游戏";
 			sourceTree = "<group>";
 		};
 		8382461E1FC556C700995AB9 = {
@@ -490,6 +508,7 @@
 				8351D3751FCBE4E600EFBB9B /* lixianxiazai.jpg in Resources */,
 				8351D32C1FC820B600EFBB9B /* map_icon_selected.png in Resources */,
 				8351D3741FCBE4E600EFBB9B /* ditufuwu.jpg in Resources */,
+				8351D3C41FCE5A7200EFBB9B /* GameViewController.xib in Resources */,
 				8351D33E1FC9CCAB00EFBB9B /* home_icon_normal@2x.png in Resources */,
 				8351D32D1FC820B600EFBB9B /* home_icon_selected.png in Resources */,
 				8351D3481FC9D02100EFBB9B /* my_icon_selected.png in Resources */,
@@ -587,6 +606,7 @@
 				8351D31B1FC81BCD00EFBB9B /* RootViewController.m in Sources */,
 				8382463A1FC556C800995AB9 /* main.m in Sources */,
 				8351D3921FCCEF5800EFBB9B /* LoginViewController.m in Sources */,
+				8351D3C31FCE5A7200EFBB9B /* GameViewController.m in Sources */,
 				8382462C1FC556C800995AB9 /* AppDelegate.m in Sources */,
 				8351D3A11FCD4E5700EFBB9B /* RegisterViewController.m in Sources */,
 				8351D34F1FCBB11900EFBB9B /* MapViewController.m in Sources */,

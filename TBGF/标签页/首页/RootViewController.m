@@ -7,6 +7,7 @@
 //
 
 #import "RootViewController.h"
+#import "GameViewController.h"
 
 @interface RootViewController ()
 @end
@@ -37,6 +38,10 @@
     [_dongtai setUserInteractionEnabled:YES];
     [_dongtai addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickCategory:)]];
     
+    [_gameImageView setUserInteractionEnabled:YES];
+    [_gameImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickCategory:)]];
+    
+    
     
 }
 - (void)viewWillAppea:(BOOL)animated
@@ -60,9 +65,13 @@
 //        self.navigationItem.backBarButtonItem = temporaryBarButtonItem;
 //        [self.navigationController pushViewController:baiduMapController animated:NO];
         
-    }else if(viewClicked==_dongtai)
+    }else if(viewClicked==_gameImageView)
     {
-        NSLog(@"imageView2");
+        NSLog(@"game");
+        GameViewController *gameController = [[GameViewController alloc]init];
+         gameController.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:gameController animated:NO];
+        
     }
 }
 
