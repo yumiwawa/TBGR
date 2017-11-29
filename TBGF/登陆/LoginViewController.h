@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ValidateUtil.h"
 #import "MainTabViewController.h"
 #import "PhoneVerifyViewController.h"
 #import "ChangePasswordViewController.h"
 
 @interface LoginViewController : UIViewController
+
 @property (strong, nonatomic) IBOutlet UITextField *account;
 @property (strong, nonatomic) IBOutlet UITextField *password;
 @property (strong, nonatomic) IBOutlet UIButton *login;
@@ -20,5 +22,7 @@
 - (IBAction)goToLogin:(UIButton *)sender;
 - (IBAction)goFrogetPassword:(UIButton *)sender;
 - (IBAction)goRegister:(UIButton *)sender;
+- (IBAction)didEndOnExit:(id)sender;
+- (IBAction)closeKeyboard:(id)sender;
 
 @end

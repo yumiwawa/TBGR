@@ -45,6 +45,7 @@
 		8351D3A81FCD50A800EFBB9B /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3A61FCD50A800EFBB9B /* ChangePasswordViewController.xib */; };
 		8351D3C31FCE5A7200EFBB9B /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3C11FCE5A7200EFBB9B /* GameViewController.m */; };
 		8351D3C41FCE5A7200EFBB9B /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3C21FCE5A7200EFBB9B /* GameViewController.xib */; };
+		8351D3C81FCE9DC200EFBB9B /* ValidateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3C71FCE9DC200EFBB9B /* ValidateUtil.m */; };
 		8382462C1FC556C800995AB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8382462B1FC556C800995AB9 /* AppDelegate.m */; };
 		838246321FC556C800995AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838246301FC556C800995AB9 /* Main.storyboard */; };
 		838246341FC556C800995AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838246331FC556C800995AB9 /* Assets.xcassets */; };
@@ -121,6 +122,8 @@
 		8351D3C01FCE5A7200EFBB9B /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		8351D3C11FCE5A7200EFBB9B /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		8351D3C21FCE5A7200EFBB9B /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		8351D3C61FCE9DC200EFBB9B /* ValidateUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValidateUtil.h; sourceTree = "<group>"; };
+		8351D3C71FCE9DC200EFBB9B /* ValidateUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidateUtil.m; sourceTree = "<group>"; };
 		838246271FC556C800995AB9 /* TBGF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBGF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8382462A1FC556C800995AB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8382462B1FC556C800995AB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -323,6 +326,15 @@
 			path = "游戏";
 			sourceTree = "<group>";
 		};
+		8351D3C51FCE9D8900EFBB9B /* 工具 */ = {
+			isa = PBXGroup;
+			children = (
+				8351D3C61FCE9DC200EFBB9B /* ValidateUtil.h */,
+				8351D3C71FCE9DC200EFBB9B /* ValidateUtil.m */,
+			);
+			path = "工具";
+			sourceTree = "<group>";
+		};
 		8382461E1FC556C700995AB9 = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +360,7 @@
 		838246291FC556C800995AB9 /* TBGF */ = {
 			isa = PBXGroup;
 			children = (
+				8351D3C51FCE9D8900EFBB9B /* 工具 */,
 				8351D38E1FCCEF3100EFBB9B /* 登陆 */,
 				8351D37D1FCC21A900EFBB9B /* 标签页 */,
 				8351D2AA1FC80FF300EFBB9B /* Resources */,
@@ -612,6 +625,7 @@
 				8351D34F1FCBB11900EFBB9B /* MapViewController.m in Sources */,
 				8351D38D1FCC27C500EFBB9B /* MainTabViewController.m in Sources */,
 				8351D3A71FCD50A800EFBB9B /* ChangePasswordViewController.m in Sources */,
+				8351D3C81FCE9DC200EFBB9B /* ValidateUtil.m in Sources */,
 				8351D3371FC863B300EFBB9B /* BaiduMapViewController.m in Sources */,
 				8351D31F1FC81C2F00EFBB9B /* MYViewController.m in Sources */,
 			);
