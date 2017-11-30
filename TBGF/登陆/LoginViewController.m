@@ -17,9 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
       [NSThread sleepForTimeInterval:3];
-    self.title=@"登陆";
+    self.title=@"登录";
     _account.delegate = self;//代理指定为自身所在的类对象
      _password.delegate = self;//代理指定为自身所在的类对象
+    //设置提示字体颜色
+    [_account setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
+     [_password setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
     //添加变化监听
     [_account addTarget:self action:@selector(textFieldChanged:) forControlEvents:UIControlEventEditingChanged];
     [_password addTarget:self action:@selector(textFieldChanged:) forControlEvents:UIControlEventEditingChanged];
@@ -47,12 +50,55 @@
 
 - (IBAction)goToLogin:(UIButton *)sender {
      NSLog(@"登录");
-    MainTabViewController *mainVC = [[MainTabViewController alloc] init];
-   [self.navigationController pushViewController:mainVC animated:NO];
-    [self.navigationController setNavigationBarHidden:YES];
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];//创建AFN管理者
+    //序列化
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    //接受类型是字符串
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    //获取用户输入的账号密码
+    NSString *userStr = self.account.text;
+    NSString *passStr = self.password.text;
+    NSDictionary *dic = @{
+                          @"name":userStr,
+                          @"password":passStr
+                          };
+    [manager POST:@"http://www.smartbyy.com/login/loginNameTest.php" parameters:dic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSDictionary *nsdic = responseObject;
+        NSLog(@"%@",nsdic);
+        NSLog(@"登录成功 我的天");
+        NSString * str = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
+        NSLog(@"登录结果%@",str);
+        UIAlertController *alert;
+      
+        if([str isEqual:@"0"])
+        {
+              alert = [UIAlertController alertControllerWithTitle:@"尊敬的用户" message:@"登录成功" preferredStyle:  UIAlertControllerStyleAlert];
+            MainTabViewController *mainVC = [[MainTabViewController alloc] init];
+            [self.navigationController pushViewController:mainVC animated:NO];
+            [self.navigationController setNavigationBarHidden:YES];
+        }else
+        {
+              alert = [UIAlertController alertControllerWithTitle:@"尊敬的用户" message:@"登录失败" preferredStyle:  UIAlertControllerStyleAlert];
+        }
+       
+            //弹出提示框；
+        [self presentViewController:alert animated:true completion:nil];
+        [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(creatAlert:) userInfo:alert repeats:NO];
+
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSError *err = error;
+        NSLog(@"%@",err);
+        NSLog(@"登录失败");
+        
+    }];
+}
+- (void)creatAlert:(NSTimer *)timer{
+    UIAlertController *alert = [timer userInfo];
+    [alert dismissViewControllerAnimated:YES completion:nil];
+    alert = nil;
     
 }
-
 - (IBAction)goFrogetPassword:(UIButton *)sender {
       NSLog(@"忘记密码");
     ChangePasswordViewController *cpVc = [[ChangePasswordViewController alloc] init];
@@ -136,4 +182,5 @@
 - (void)textFieldChanged:(UITextField *)textField {
        [self isRightFormat];
 }
+
 @end

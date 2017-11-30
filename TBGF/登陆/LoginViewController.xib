@@ -30,7 +30,7 @@
                         <stackView opaque="NO" contentMode="center" ambiguous="YES" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="249-vF-dqB">
                             <rect key="frame" x="0.0" y="0.0" width="264" height="43"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="手机号" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="28" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Bpd-OB-6sn">
+                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" text="15201019158" borderStyle="roundedRect" placeholder="手机号" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="28" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Bpd-OB-6sn">
                                     <rect key="frame" x="0.0" y="0.0" width="264" height="43"/>
                                     <accessibility key="accessibilityConfiguration" hint="手机号"/>
                                     <edgeInsets key="layoutMargins" top="8" left="8" bottom="80" right="8"/>
@@ -46,7 +46,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t9h-dI-jWl">
                             <rect key="frame" x="0.0" y="63" width="264" height="43"/>
                             <subviews>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="center" minimumFontSize="25" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ib0-BW-1sH">
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="a249480300" borderStyle="roundedRect" placeholder="密码" textAlignment="center" minimumFontSize="25" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ib0-BW-1sH">
                                     <rect key="frame" x="0.0" y="0.0" width="264" height="43"/>
                                     <accessibility key="accessibilityConfiguration" hint="密码"/>
                                     <nil key="textColor"/>

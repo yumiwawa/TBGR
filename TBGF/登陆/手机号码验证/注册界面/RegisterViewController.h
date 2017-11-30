@@ -10,5 +10,7 @@
 #import "RegisterViewController.h"
 
 @interface RegisterViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITextField *passwordConfirm;
 
+@property (strong, nonatomic) IBOutlet UITextField *password;
 @end

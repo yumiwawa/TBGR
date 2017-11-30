@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
        self.title = @"手机号码验证";
+    [_phoneNum setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
+    [_yanzhengma setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
     // Do any additional setup after loading the view from its nib.
 }
 

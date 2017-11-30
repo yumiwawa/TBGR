@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
       self.title = @"修改密码";
+    [_phoneNum setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
+    [_yanzhengma setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
+    [_password setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
+    [_passwordConfirm setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
     // Do any additional setup after loading the view from its nib.
 }
 

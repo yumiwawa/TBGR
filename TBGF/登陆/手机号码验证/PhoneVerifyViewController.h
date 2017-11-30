@@ -11,5 +11,7 @@
 
 @interface PhoneVerifyViewController : UIViewController
 - (IBAction)goToRegister:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UITextField *phoneNum;
+@property (strong, nonatomic) IBOutlet UITextField *yanzhengma;
 
 @end
