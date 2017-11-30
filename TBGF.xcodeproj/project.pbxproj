@@ -46,6 +46,7 @@
 		8351D3C31FCE5A7200EFBB9B /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3C11FCE5A7200EFBB9B /* GameViewController.m */; };
 		8351D3C41FCE5A7200EFBB9B /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3C21FCE5A7200EFBB9B /* GameViewController.xib */; };
 		8351D3C81FCE9DC200EFBB9B /* ValidateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3C71FCE9DC200EFBB9B /* ValidateUtil.m */; };
+		8351D4991FCFF56900EFBB9B /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8351D49A1FCFF56900EFBB9B /* libAFNetworking.a */; };
 		8382462C1FC556C800995AB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8382462B1FC556C800995AB9 /* AppDelegate.m */; };
 		838246321FC556C800995AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838246301FC556C800995AB9 /* Main.storyboard */; };
 		838246341FC556C800995AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838246331FC556C800995AB9 /* Assets.xcassets */; };
@@ -124,6 +125,7 @@
 		8351D3C21FCE5A7200EFBB9B /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		8351D3C61FCE9DC200EFBB9B /* ValidateUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValidateUtil.h; sourceTree = "<group>"; };
 		8351D3C71FCE9DC200EFBB9B /* ValidateUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidateUtil.m; sourceTree = "<group>"; };
+		8351D49A1FCFF56900EFBB9B /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		838246271FC556C800995AB9 /* TBGF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBGF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8382462A1FC556C800995AB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8382462B1FC556C800995AB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8351D4991FCFF56900EFBB9B /* libAFNetworking.a in Frameworks */,
 				164D47A41168156BD606DCB9 /* libPods-TBGF.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				8351D3AF1FCE52C800EFBB9B /* WebKit.framework */,
+				8351D49A1FCFF56900EFBB9B /* libAFNetworking.a */,
 				FC70BE31CDF73A51A156BB81 /* libPods-TBGF.a */,
 			);
 			name = Frameworks;
@@ -360,13 +364,13 @@
 		838246291FC556C800995AB9 /* TBGF */ = {
 			isa = PBXGroup;
 			children = (
+				838246301FC556C800995AB9 /* Main.storyboard */,
 				8351D3C51FCE9D8900EFBB9B /* 工具 */,
 				8351D38E1FCCEF3100EFBB9B /* 登陆 */,
 				8351D37D1FCC21A900EFBB9B /* 标签页 */,
 				8351D2AA1FC80FF300EFBB9B /* Resources */,
 				8382462A1FC556C800995AB9 /* AppDelegate.h */,
 				8382462B1FC556C800995AB9 /* AppDelegate.m */,
-				838246301FC556C800995AB9 /* Main.storyboard */,
 				838246331FC556C800995AB9 /* Assets.xcassets */,
 				838246351FC556C800995AB9 /* LaunchScreen.storyboard */,
 				838246381FC556C800995AB9 /* Info.plist */,

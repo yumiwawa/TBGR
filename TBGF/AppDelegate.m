@@ -25,7 +25,6 @@
     if (!ret) {
         NSLog(@"manager start failed!");
     }
-    
     // 创建程序窗口
     self.window = [[UIWindow alloc] initWithFrame:
                    [[UIScreen mainScreen] bounds]];
