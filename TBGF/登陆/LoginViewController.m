@@ -51,6 +51,10 @@
 - (IBAction)goToLogin:(UIButton *)sender {
      NSLog(@"登录");
     
+    MainTabViewController *mainVC = [[MainTabViewController alloc] init];
+    [self.navigationController pushViewController:mainVC animated:NO];
+    [self.navigationController setNavigationBarHidden:YES];
+    
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];//创建AFN管理者
     //序列化
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
@@ -63,14 +67,14 @@
                           @"name":userStr,
                           @"password":passStr
                           };
+   
     [manager POST:@"http://www.smartbyy.com/login/loginNameTest.php" parameters:dic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *nsdic = responseObject;
         NSLog(@"%@",nsdic);
         NSLog(@"登录成功 我的天");
         NSString * str = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSLog(@"登录结果%@",str);
-        UIAlertController *alert;
-      
+         UIAlertController *alert;
         if([str isEqual:@"0"])
         {
               alert = [UIAlertController alertControllerWithTitle:@"尊敬的用户" message:@"登录成功" preferredStyle:  UIAlertControllerStyleAlert];
@@ -81,17 +85,19 @@
         {
               alert = [UIAlertController alertControllerWithTitle:@"尊敬的用户" message:@"登录失败" preferredStyle:  UIAlertControllerStyleAlert];
         }
-       
-            //弹出提示框；
         [self presentViewController:alert animated:true completion:nil];
+            //弹出提示框；
         [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(creatAlert:) userInfo:alert repeats:NO];
 
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSError *err = error;
         NSLog(@"%@",err);
         NSLog(@"登录失败");
-        
+        UIAlertController *alert;
+        alert = [UIAlertController alertControllerWithTitle:@"尊敬的用户" message:@"登录失败" preferredStyle:  UIAlertControllerStyleAlert];
+         [self presentViewController:alert animated:true completion:nil];
     }];
+   
 }
 - (void)creatAlert:(NSTimer *)timer{
     UIAlertController *alert = [timer userInfo];
