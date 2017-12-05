@@ -50,7 +50,10 @@
         cell.imageView.image=[UIImage imageNamed:imageName];
       //  cell.imageView.highlightedImage=[UIImage imageNamed:@"my_icon_selected.png"];
         cell.detailTextLabel.text=[_details objectAtIndex:rowNo];
+        //设置箭头
+        cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
     }
+    
      return cell;
 }
 

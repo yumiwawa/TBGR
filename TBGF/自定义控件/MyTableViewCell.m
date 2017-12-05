@@ -15,7 +15,7 @@
     // Initialization code
 }
 - (void)setFrame:(CGRect)frame{
-    NSLog(@"*****%f ",frame.size.height);
+
     frame.origin.x += 10;
     frame.origin.y += 10;
     frame.size.height -= 10;

@@ -141,6 +141,7 @@
 		83762D7D1FD52E0F004AFED1 /* map_icon_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_icon_normal@2x.png"; sourceTree = "<group>"; };
 		83762D7E1FD52E0F004AFED1 /* my_icon_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my_icon_normal@2x.png"; sourceTree = "<group>"; };
 		83762E3F1FD53192004AFED1 /* my_shoppingcar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = my_shoppingcar.jpg; sourceTree = "<group>"; };
+		837E190E1FD6713400198A9C /* TBGF.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TBGF.entitlements; sourceTree = "<group>"; };
 		838246271FC556C800995AB9 /* TBGF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBGF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8382462A1FC556C800995AB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8382462B1FC556C800995AB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -394,6 +395,7 @@
 		838246291FC556C800995AB9 /* TBGF */ = {
 			isa = PBXGroup;
 			children = (
+				837E190E1FD6713400198A9C /* TBGF.entitlements */,
 				838246301FC556C800995AB9 /* Main.storyboard */,
 				83762D5D1FD4FDA9004AFED1 /* 自定义控件 */,
 				8351D3C51FCE9D8900EFBB9B /* 工具 */,
@@ -498,9 +500,12 @@
 				TargetAttributes = {
 					838246261FC556C800995AB9 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -833,12 +838,16 @@
 			baseConfigurationReference = 549D9160A8F8BAE875A1A0BE /* Pods-TBGF.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2L95K8W66M;
+				CODE_SIGN_ENTITLEMENTS = TBGF/TBGF.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GQ3UYAW932;
 				INFOPLIST_FILE = TBGF/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zhongtaihulian;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhongtaihulian.taibaoguofang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4b075fc8-3f12-48d7-91da-8c80367432e8";
+				PROVISIONING_PROFILE_SPECIFIER = TBGF_development;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				"WARNING_CFLAGS[arch=*]" = "-Wno-documentation";
 			};
@@ -849,12 +858,16 @@
 			baseConfigurationReference = EC777B498D19C256ED6EA8F7 /* Pods-TBGF.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2L95K8W66M;
+				CODE_SIGN_ENTITLEMENTS = TBGF/TBGF.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GQ3UYAW932;
 				INFOPLIST_FILE = TBGF/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zhongtaihulian;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhongtaihulian.taibaoguofang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c47c9a2a-cc10-4491-ad95-fe360d3272f8";
+				PROVISIONING_PROFILE_SPECIFIER = TBGF_distribution;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = "-Wno-documentation";
 			};
