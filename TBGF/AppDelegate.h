@@ -20,7 +20,7 @@
 // 如果需要使用idfa功能所需要引入的头文件（可选）
 #import <AdSupport/AdSupport.h>
 static NSString *appKey = @"d567cb1f9dcbfa451546d4cf";
-static NSString *channel = @"Publish channel";
+static NSString *channel = @"App store";
 static BOOL isProduction = FALSE;
 @interface AppDelegate : UIResponder<UIApplicationDelegate> {
     BMKMapManager* _mapManager;
