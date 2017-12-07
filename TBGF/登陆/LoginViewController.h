@@ -11,7 +11,7 @@
 #import "MainTabViewController.h"
 #import "PhoneVerifyViewController.h"
 #import "ChangePasswordViewController.h"
-
+#import "Constant.h"
 @interface LoginViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UITextField *account;

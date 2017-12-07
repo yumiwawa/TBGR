@@ -88,7 +88,7 @@
     NSString *latitude=[extras valueForKey:@"latitude"];
     NSString *longitude=[extras valueForKey:@"longitude"];
     NSString *nickname=[extras valueForKey:@"nickName"];
-     NSLog(type);
+    NSLog(@"%@", type);
     UIAlertController *alert;
     NSInteger msgType=[type intValue];
     if(msgType==1)

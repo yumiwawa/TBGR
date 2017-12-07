@@ -10,8 +10,16 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "BaiduMapViewController.h"
+#import "GameViewController.h"
+#import "GfdtViewController.h"
+#import "SosViewController.h"
 @interface RootViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIImageView *businessImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *emergencyImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *peopleImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *knowledgeImageView;
 @property (strong, nonatomic) IBOutlet UIImageView *dongtai;
 @property (strong, nonatomic) IBOutlet UIImageView *gameImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *sosImageView;
 
 @end

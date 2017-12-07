@@ -11,8 +11,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
             <connections>
+                <outlet property="businessImageView" destination="pou-Yx-gB9" id="MNV-fS-lkQ"/>
                 <outlet property="dongtai" destination="aLt-sa-JVQ" id="2oh-h4-7XN"/>
+                <outlet property="emergencyImageView" destination="WNW-Os-IZh" id="Cmy-e3-EkP"/>
                 <outlet property="gameImageView" destination="u0f-hi-fwb" id="LBg-SO-fFf"/>
+                <outlet property="knowledgeImageView" destination="Tfm-Jj-hoh" id="Sis-rq-D6h"/>
+                <outlet property="peopleImageView" destination="h6J-XH-UVC" id="UBZ-mp-Fk5"/>
+                <outlet property="sosImageView" destination="zNu-c5-Ybe" id="JBR-Sf-2FU"/>
                 <outlet property="view" destination="iN0-l3-epB" id="z4c-mm-kJm"/>
             </connections>
         </placeholder>

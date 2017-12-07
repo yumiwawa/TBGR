@@ -96,6 +96,7 @@
         UIAlertController *alert;
         alert = [UIAlertController alertControllerWithTitle:@"尊敬的用户" message:@"登录失败" preferredStyle:  UIAlertControllerStyleAlert];
          [self presentViewController:alert animated:true completion:nil];
+            [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(creatAlert:) userInfo:alert repeats:NO];
     }];
    
 }

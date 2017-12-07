@@ -7,7 +7,6 @@
 //
 
 #import "RootViewController.h"
-#import "GameViewController.h"
 
 @interface RootViewController ()
 @end
@@ -41,6 +40,9 @@
     [_gameImageView setUserInteractionEnabled:YES];
     [_gameImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickCategory:)]];
     
+    [_sosImageView setUserInteractionEnabled:YES];
+    [_sosImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickCategory:)]];
+    
     
     
 }
@@ -58,12 +60,12 @@
     UIView *viewClicked=[gestureRecognizer view];
     if (viewClicked==_dongtai) {
         NSLog(@"dongtai");
-//        BaiduMapViewController *baiduMapController = [[BaiduMapViewController alloc]init];
-//
-//        UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
-//        temporaryBarButtonItem.title = @"地图";
-//        self.navigationItem.backBarButtonItem = temporaryBarButtonItem;
-//        [self.navigationController pushViewController:baiduMapController animated:NO];
+        GfdtViewController *gfdtController = [[GfdtViewController alloc]init];
+
+        UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
+        temporaryBarButtonItem.title = @"国防动态";
+        self.navigationItem.backBarButtonItem = temporaryBarButtonItem;
+        [self.navigationController pushViewController:gfdtController animated:NO];
         
     }else if(viewClicked==_gameImageView)
     {
@@ -72,6 +74,12 @@
          gameController.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:gameController animated:NO];
         
+    }else if(viewClicked==_sosImageView)
+    {
+        NSLog(@"sos");
+        SosViewController *sosController = [[SosViewController alloc]init];
+        sosController.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:sosController animated:NO];
     }
 }
 
