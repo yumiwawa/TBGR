@@ -71,6 +71,8 @@
 		8382463A1FC556C800995AB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 838246391FC556C800995AB9 /* main.m */; };
 		838246441FC556C800995AB9 /* TBGFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 838246431FC556C800995AB9 /* TBGFTests.m */; };
 		8382464F1FC556C800995AB9 /* TBGFUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8382464E1FC556C800995AB9 /* TBGFUITests.m */; };
+		83B9A58A1FDA3E2000EEB463 /* EmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B9A5881FDA3E2000EEB463 /* EmergencyViewController.m */; };
+		83B9A58B1FDA3E2000EEB463 /* EmergencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B9A5891FDA3E2000EEB463 /* EmergencyViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +182,9 @@
 		8382464A1FC556C800995AB9 /* TBGFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBGFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8382464E1FC556C800995AB9 /* TBGFUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBGFUITests.m; sourceTree = "<group>"; };
 		838246501FC556C800995AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83B9A5871FDA3E2000EEB463 /* EmergencyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmergencyViewController.h; sourceTree = "<group>"; };
+		83B9A5881FDA3E2000EEB463 /* EmergencyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmergencyViewController.m; sourceTree = "<group>"; };
+		83B9A5891FDA3E2000EEB463 /* EmergencyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmergencyViewController.xib; sourceTree = "<group>"; };
 		EC777B498D19C256ED6EA8F7 /* Pods-TBGF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBGF.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBGF/Pods-TBGF.release.xcconfig"; sourceTree = "<group>"; };
 		FC70BE31CDF73A51A156BB81 /* libPods-TBGF.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TBGF.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -264,6 +269,7 @@
 		8351D32F1FC8621D00EFBB9B /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				83B9A5861FDA3DFF00EEB463 /* 应急疏散 */,
 				830AFB651FD8ED79005B6D19 /* 紧急求救 */,
 				830AFB171FD7E078005B6D19 /* 国防动态 */,
 				8351D3A91FCD656A00EFBB9B /* 游戏 */,
@@ -492,6 +498,16 @@
 			path = TBGFUITests;
 			sourceTree = "<group>";
 		};
+		83B9A5861FDA3DFF00EEB463 /* 应急疏散 */ = {
+			isa = PBXGroup;
+			children = (
+				83B9A5871FDA3E2000EEB463 /* EmergencyViewController.h */,
+				83B9A5881FDA3E2000EEB463 /* EmergencyViewController.m */,
+				83B9A5891FDA3E2000EEB463 /* EmergencyViewController.xib */,
+			);
+			path = "应急疏散";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -619,6 +635,7 @@
 				8351D3A81FCD50A800EFBB9B /* ChangePasswordViewController.xib in Resources */,
 				830AFB6A1FD8EDA2005B6D19 /* SosViewController.xib in Resources */,
 				837F72E11FD9454100A51AF6 /* pad_news.png in Resources */,
+				83B9A58B1FDA3E2000EEB463 /* EmergencyViewController.xib in Resources */,
 				837F72EE1FD9454100A51AF6 /* home_icon_normal@2x.png in Resources */,
 				837F72DD1FD9454100A51AF6 /* my_binding.jpg in Resources */,
 				837F72E41FD9454100A51AF6 /* my_icon_selected.png in Resources */,
@@ -740,6 +757,7 @@
 				830AFB631FD7E5D5005B6D19 /* GfnewsTableViewController.m in Sources */,
 				8382462C1FC556C800995AB9 /* AppDelegate.m in Sources */,
 				830AFB691FD8EDA2005B6D19 /* SosViewController.m in Sources */,
+				83B9A58A1FDA3E2000EEB463 /* EmergencyViewController.m in Sources */,
 				8351D3A11FCD4E5700EFBB9B /* RegisterViewController.m in Sources */,
 				8351D34F1FCBB11900EFBB9B /* MapViewController.m in Sources */,
 				8351D38D1FCC27C500EFBB9B /* MainTabViewController.m in Sources */,

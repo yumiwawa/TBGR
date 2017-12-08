@@ -70,12 +70,13 @@
     //接受类型是字符串
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     NSDictionary *dic = @{
-                          @"message":@"我被困在这里,快来救我",
+                          @"message":@"我被困在这里,快来救我,来自iphone8",
                           @"id":@"15201019158",
                           @"type":@"1",
                           @"latitude":@"40.3456",
                           @"longitude":@"113.9876",
                           @"address":@"北京火炬广场一号",
+                          @"nickName":@"倔强的兔子",
                           };
     
     [manager POST:@"http://www.smartbyy.com/push.php" parameters:dic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
