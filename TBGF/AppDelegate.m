@@ -22,9 +22,9 @@
     // Override point for customization after application launch.
     _mapManager = [[BMKMapManager alloc]init];
     // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
-    BOOL ret = [_mapManager start:@"sfkcluB3G6l41DWMj77LrLfTvStEcDUp"  generalDelegate:nil];
+    BOOL ret = [_mapManager start:@"chkdQij54eulOC3dMWadlbl08Cu874h6"  generalDelegate:nil];
     if (!ret) {
-        NSLog(@"manager start failed!");
+        NSLog(@"manager start failed!*****************");
     }
     // 创建程序窗口
     self.window = [[UIWindow alloc] initWithFrame:
