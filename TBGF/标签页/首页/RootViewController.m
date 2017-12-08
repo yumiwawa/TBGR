@@ -43,7 +43,8 @@
     [_sosImageView setUserInteractionEnabled:YES];
     [_sosImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickCategory:)]];
     
-    
+    [_emergencyImageView setUserInteractionEnabled:YES];
+    [_emergencyImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickCategory:)]];
     
 }
 - (void)viewWillAppea:(BOOL)animated
@@ -80,6 +81,12 @@
         SosViewController *sosController = [[SosViewController alloc]init];
         sosController.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:sosController animated:NO];
+    }else if(viewClicked==_emergencyImageView)
+    {
+        NSLog(@"emergency");
+        EmergencyViewController *emController = [[EmergencyViewController alloc]init];
+        emController.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:emController animated:NO];
     }
 }
 

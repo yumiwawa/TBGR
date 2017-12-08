@@ -13,6 +13,7 @@
 #import "GameViewController.h"
 #import "GfdtViewController.h"
 #import "SosViewController.h"
+#import "EmergencyViewController.h"
 @interface RootViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *businessImageView;
 @property (strong, nonatomic) IBOutlet UIImageView *emergencyImageView;
