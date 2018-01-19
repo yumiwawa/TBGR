@@ -9,7 +9,6 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-#import "BaiduMapViewController.h"
 #import "GameViewController.h"
 #import "GfdtViewController.h"
 #import "SosViewController.h"

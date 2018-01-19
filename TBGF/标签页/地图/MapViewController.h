@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaiduMapViewController.h"
+#import <BMKLocationkit/BMKLocationComponent.h>
+#import "SingleLocDemoViewController.h"
 #import "AppDelegate.h"
 
 @interface MapViewController : UIViewController

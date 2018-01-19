@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "GfnewsTableViewController.h"
 @interface GfdtViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIImageView *gfNewsImageView;
 
 @end

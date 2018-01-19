@@ -10,6 +10,8 @@
 #import "MainTabViewController.h"
 #import "LoginViewController.h"
 #import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+#import <BMKLocationkit/BMKLocationComponent.h>
+#import <BMKLocationkit/BMKLocationAuth.h>
 #import <AFNetworking.h>
 // 引入JPush功能所需头文件
 #import "JPUSHService.h"
@@ -24,6 +26,7 @@ static NSString *channel = @"App store";
 static BOOL isProduction = FALSE;
 @interface AppDelegate : UIResponder<UIApplicationDelegate> {
     BMKMapManager* _mapManager;
+    BMKLocationManager* _mapLocationManager;
 }
 @property (strong, nonatomic) UIWindow *window;
 

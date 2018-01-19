@@ -85,9 +85,12 @@
         {
               alert = [UIAlertController alertControllerWithTitle:@"尊敬的用户" message:@"登录失败" preferredStyle:  UIAlertControllerStyleAlert];
         }
-        [self presentViewController:alert animated:true completion:nil];
-            //弹出提示框；
-        [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(creatAlert:) userInfo:alert repeats:NO];
+        //解决Presenting view controllers on detached view controllers is discouraged <LoginViewController: 0x7f82c670abc0>.
+        AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        [delegate.window.rootViewController presentViewController:alert animated:YES completion:nil];
+       // [self presentViewController:alert animated:true completion:nil];
+     //让提示框消失；
+        [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(creatAlert:) userInfo:alert repeats:NO];
 
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSError *err = error;
@@ -95,8 +98,8 @@
         NSLog(@"登录失败");
         UIAlertController *alert;
         alert = [UIAlertController alertControllerWithTitle:@"尊敬的用户" message:@"登录失败" preferredStyle:  UIAlertControllerStyleAlert];
-         [self presentViewController:alert animated:true completion:nil];
-            [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(creatAlert:) userInfo:alert repeats:NO];
+        [self presentViewController:alert animated:true completion:nil];
+        [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(creatAlert:) userInfo:alert repeats:NO];
     }];
    
 }
@@ -189,5 +192,7 @@
 - (void)textFieldChanged:(UITextField *)textField {
        [self isRightFormat];
 }
+
+
 
 @end

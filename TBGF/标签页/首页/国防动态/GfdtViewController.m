@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    
+    [_gfNewsImageView setUserInteractionEnabled:YES];
+    [_gfNewsImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickCategory:)]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +37,18 @@
     // Pass the selected object to the new view controller.
 }
 */
+-(void)clickCategory:(UITapGestureRecognizer* )gestureRecognizer
+{
+    UIView *viewClicked=[gestureRecognizer view];
+    if (viewClicked==_gfNewsImageView) {
+        NSLog(@"guofangxinwen");
+        GfnewsTableViewController *gfNewsController = [[GfnewsTableViewController alloc]init];
+        UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
+        temporaryBarButtonItem.title = @"国防新闻";
+        self.navigationItem.backBarButtonItem = temporaryBarButtonItem;
+        [self.navigationController pushViewController:gfNewsController animated:NO];
+        
+    }
+}
 
 @end

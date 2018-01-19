@@ -20,20 +20,19 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F4z-tj-2Y7">
-                    <rect key="frame" x="83" y="213" width="208" height="241"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F4z-tj-2Y7">
+                    <rect key="frame" x="83" y="213" width="208" height="242"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="center" semanticContentAttribute="forceLeftToRight" ambiguous="YES" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3qi-9W-2xS">
-                            <rect key="frame" x="0.0" y="0.0" width="208" height="120.5"/>
+                        <stackView opaque="NO" contentMode="center" semanticContentAttribute="forceLeftToRight" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3qi-9W-2xS">
+                            <rect key="frame" x="0.0" y="0.0" width="208" height="121"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hhq-2b-olD">
-                                    <rect key="frame" x="0.0" y="0.0" width="100" height="120.5"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hhq-2b-olD">
+                                    <rect key="frame" x="0.0" y="0.5" width="100" height="120.5"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ditufuwu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mqF-sS-kGG">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ditufuwu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mqF-sS-kGG">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="地图服务" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEI-On-Z0r" userLabel="地图服务">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地图服务" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEI-On-Z0r" userLabel="地图服务">
                                             <rect key="frame" x="0.0" y="100" width="100" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -41,13 +40,13 @@
                                         </label>
                                     </subviews>
                                 </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BkQ-XT-mmp">
-                                    <rect key="frame" x="108" y="0.0" width="100" height="120.5"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BkQ-XT-mmp">
+                                    <rect key="frame" x="108" y="0.5" width="100" height="120.5"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bianminfuwu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Y8A-bJ-2Fj">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="bianminfuwu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Y8A-bJ-2Fj">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="便民服务" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLD-Ss-UK1" userLabel="便民服务">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="便民服务" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLD-Ss-UK1" userLabel="便民服务">
                                             <rect key="frame" x="0.0" y="100" width="100" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -57,31 +56,37 @@
                                 </stackView>
                             </subviews>
                         </stackView>
-                        <stackView opaque="NO" contentMode="center" semanticContentAttribute="forceLeftToRight" ambiguous="YES" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ldE-Nw-JaM">
-                            <rect key="frame" x="0.0" y="120.5" width="208" height="120.5"/>
+                        <stackView opaque="NO" contentMode="center" semanticContentAttribute="forceLeftToRight" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ldE-Nw-JaM">
+                            <rect key="frame" x="0.0" y="121" width="208" height="121"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uAf-SW-EZ0">
-                                    <rect key="frame" x="0.0" y="0.0" width="100" height="120.5"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uAf-SW-EZ0">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="121"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="lixianxiazai.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ldw-XA-DYl">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lixianxiazai.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ldw-XA-DYl">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="地图下载" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yt-du-kKo">
-                                            <rect key="frame" x="0.0" y="100" width="100" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地图下载" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yt-du-kKo">
+                                            <rect key="frame" x="0.0" y="100" width="100" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="oYn-hZ-40N"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8yD-zo-MeM">
-                                    <rect key="frame" x="108" y="0.0" width="100" height="120.5"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8yD-zo-MeM">
+                                    <rect key="frame" x="108" y="0.0" width="100" height="121"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="sheshizhuangtai.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2oS-YS-Ksk">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sheshizhuangtai.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2oS-YS-Ksk">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="设施状态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kng-hf-h35">
-                                            <rect key="frame" x="0.0" y="100" width="100" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设施状态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kng-hf-h35">
+                                            <rect key="frame" x="0.0" y="100" width="100" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="XYC-5Q-MD4"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -91,9 +96,16 @@
                             </subviews>
                         </stackView>
                     </subviews>
+                    <constraints>
+                        <constraint firstItem="ldE-Nw-JaM" firstAttribute="top" secondItem="F4z-tj-2Y7" secondAttribute="top" constant="121" id="IsN-jv-EPi"/>
+                    </constraints>
                 </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="F4z-tj-2Y7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OCJ-05-J85"/>
+                <constraint firstItem="F4z-tj-2Y7" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="mIw-uJ-CYA"/>
+            </constraints>
             <point key="canvasLocation" x="32.5" y="67.5"/>
         </view>
     </objects>

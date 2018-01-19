@@ -22,6 +22,33 @@
     NSLog(@"didFinishLaunchingWithOptions");
     // Override point for customization after application launch.
     _mapManager = [[BMKMapManager alloc]init];
+    BOOL success =  [_mapManager start:@"chkdQij54eulOC3dMWadlbl08Cu874h6" generalDelegate:nil];
+    
+    if (!success) {
+        NSLog(@"百度地图初始化失败");
+    }
+      NSLog(@"百度地图初始化成功");
+ 
+    //初始化百度定位
+    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:@"chkdQij54eulOC3dMWadlbl08Cu874h6" authDelegate:self];
+    _mapLocationManager.delegate = self;
+    //设置返回位置的坐标系类型
+    _mapLocationManager.coordinateType = BMKLocationCoordinateTypeBMK09LL;
+    //设置距离过滤参数
+    _mapLocationManager.distanceFilter = kCLDistanceFilterNone;
+    //设置预期精度参数
+    _mapLocationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    //设置应用位置类型
+    _mapLocationManager.activityType = CLActivityTypeAutomotiveNavigation;
+    //设置是否自动停止位置更新
+    _mapLocationManager.pausesLocationUpdatesAutomatically = NO;
+    //设置是否允许后台定位
+    _mapLocationManager.allowsBackgroundLocationUpdates = YES;
+    //设置位置获取超时时间
+    _mapLocationManager.locationTimeout = 10;
+    //设置获取地址信息超时时间
+    _mapLocationManager.reGeocodeTimeout = 10;
+    
     // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
     BOOL ret = [_mapManager start:@"chkdQij54eulOC3dMWadlbl08Cu874h6"  generalDelegate:nil];
     if (!ret) {
@@ -94,29 +121,36 @@
     NSInteger msgType=[type intValue];
     if(msgType==1)
     {
-        NSString *msg= [@"来自 " stringByAppendingString:phoneNum];
-        msg= [msg stringByAppendingString:@"\n昵称 "];
-        msg= [msg stringByAppendingString:nickname];
-         msg= [msg stringByAppendingString:@"\n信息 "];
-        msg= [msg stringByAppendingString:content];
-        msg= [msg stringByAppendingString:@"\n纬度 "];
-        msg= [msg stringByAppendingString:latitude];
-        msg= [msg stringByAppendingString:@"\n经度 "];
-        msg= [msg stringByAppendingString:longitude];
-        msg= [msg stringByAppendingString:@"\n地址 "];
-        msg= [msg stringByAppendingString:address];
-        NSLog(msg);
-        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"不管" style:UIAlertActionStyleCancel handler:nil];
-        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"救助" style:UIAlertActionStyleDefault handler:nil];
-      
-        alert = [UIAlertController alertControllerWithTitle:@"紧急求救" message: msg preferredStyle:  UIAlertControllerStyleAlert];
-        [alert addAction:cancelAction];
-        [alert addAction:okAction];
+        if(![phoneNum isEqualToString:@"15201019158"])
+        {
+            NSString *msg= [@"来自 " stringByAppendingString:phoneNum];
+            msg= [msg stringByAppendingString:@"\n昵称 "];
+            msg= [msg stringByAppendingString:nickname];
+            msg= [msg stringByAppendingString:@"\n信息 "];
+            msg= [msg stringByAppendingString:content];
+            msg= [msg stringByAppendingString:@"\n纬度 "];
+            msg= [msg stringByAppendingString:latitude];
+            msg= [msg stringByAppendingString:@"\n经度 "];
+            msg= [msg stringByAppendingString:longitude];
+            msg= [msg stringByAppendingString:@"\n地址 "];
+            msg= [msg stringByAppendingString:address];
+            NSLog(msg);
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"不管" style:UIAlertActionStyleCancel handler:nil];
+            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"救助" style:UIAlertActionStyleDefault handler:nil];
+            
+            alert = [UIAlertController alertControllerWithTitle:@"紧急求救" message: msg preferredStyle:  UIAlertControllerStyleAlert];
+            [alert addAction:cancelAction];
+            [alert addAction:okAction];
+        }
+        
     }else if(msgType==2)
     {
         alert = [UIAlertController alertControllerWithTitle:@"尊敬的用户" message:@"登录失败" preferredStyle:  UIAlertControllerStyleAlert];
     }
-      [_window.rootViewController presentViewController:alert animated:YES completion:nil];
+    if(alert!=nil)
+    {
+         [_window.rootViewController presentViewController:alert animated:YES completion:nil];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

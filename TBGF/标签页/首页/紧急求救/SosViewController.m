@@ -99,7 +99,7 @@
         NSLog(@"%@",err);
         NSLog(@"求救失败");
         UIAlertController *alert;
-        alert = [UIAlertController alertControllerWithTitle:@"尊敬的用户" message:@"登录失败" preferredStyle:  UIAlertControllerStyleAlert];
+        alert = [UIAlertController alertControllerWithTitle:@"尊敬的用户" message:@"求救失败" preferredStyle:  UIAlertControllerStyleAlert];
         [self presentViewController:alert animated:true completion:nil];
         [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(creatAlert:) userInfo:alert repeats:NO];
     }];
@@ -139,7 +139,7 @@
 - (void)creatAlert:(NSTimer *)timer{
     UIAlertController *alert = [timer userInfo];
     [alert dismissViewControllerAnimated:YES completion:nil];
-    alert = nil;
+//    alert = nil;
     
 }
 @end

@@ -53,7 +53,7 @@
     UIView *viewClicked=[gestureRecognizer view];
     if (viewClicked==_ditu) {
         NSLog(@"ditu");
-        BaiduMapViewController *baiduMapController = [[BaiduMapViewController alloc]init];
+        SingleLocDemoViewController *baiduMapController = [[SingleLocDemoViewController alloc]init];
         baiduMapController.hidesBottomBarWhenPushed = YES;
         UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
         temporaryBarButtonItem.title = @"地图";

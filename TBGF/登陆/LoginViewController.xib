@@ -23,14 +23,13 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="O8z-2D-71T">
+                <stackView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="O8z-2D-71T">
                     <rect key="frame" x="55" y="176" width="264" height="233"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="center" ambiguous="YES" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="249-vF-dqB">
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="249-vF-dqB">
                             <rect key="frame" x="0.0" y="0.0" width="264" height="43"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" text="15201019158" borderStyle="roundedRect" placeholder="手机号" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="28" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Bpd-OB-6sn">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" text="15201019158" borderStyle="roundedRect" placeholder="手机号" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="28" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Bpd-OB-6sn">
                                     <rect key="frame" x="0.0" y="0.0" width="264" height="43"/>
                                     <accessibility key="accessibilityConfiguration" hint="手机号"/>
                                     <edgeInsets key="layoutMargins" top="8" left="8" bottom="80" right="8"/>
@@ -43,10 +42,10 @@
                                 </textField>
                             </subviews>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t9h-dI-jWl">
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9h-dI-jWl">
                             <rect key="frame" x="0.0" y="63" width="264" height="43"/>
                             <subviews>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="a249480300" borderStyle="roundedRect" placeholder="密码" textAlignment="center" minimumFontSize="25" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ib0-BW-1sH">
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="a249480300" borderStyle="roundedRect" placeholder="密码" textAlignment="center" minimumFontSize="25" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ib0-BW-1sH">
                                     <rect key="frame" x="0.0" y="0.0" width="264" height="43"/>
                                     <accessibility key="accessibilityConfiguration" hint="密码"/>
                                     <nil key="textColor"/>
@@ -58,10 +57,10 @@
                                 </textField>
                             </subviews>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LIp-pj-oVL">
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIp-pj-oVL">
                             <rect key="frame" x="0.0" y="126" width="264" height="51"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaX-S8-iIP">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaX-S8-iIP">
                                     <rect key="frame" x="0.0" y="0.0" width="264" height="51"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                     <state key="normal" title="登录"/>
@@ -71,10 +70,10 @@
                                 </button>
                             </subviews>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Xaq-OD-wU4">
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Xaq-OD-wU4">
                             <rect key="frame" x="0.0" y="197" width="264" height="36"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9E8-6q-XZ9">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9E8-6q-XZ9">
                                     <rect key="frame" x="0.0" y="0.0" width="82" height="36"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <state key="normal" title="忘记密码"/>
@@ -82,7 +81,7 @@
                                         <action selector="goFrogetPassword:" destination="-1" eventType="touchUpInside" id="K5o-oO-Zcc"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8x5-KM-aMT">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8x5-KM-aMT">
                                     <rect key="frame" x="182" y="0.0" width="82" height="36"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <state key="normal" title="立即注册"/>
@@ -93,10 +92,14 @@
                             </subviews>
                         </stackView>
                     </subviews>
-                    <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                    <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
                 </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="O8z-2D-71T" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rvv-sx-YWT"/>
+                <constraint firstItem="O8z-2D-71T" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="176" id="w3J-em-GwD"/>
+            </constraints>
             <connections>
                 <action selector="closeKeyboard:" destination="-1" eventType="touchDown" id="pmb-UT-Y7c"/>
             </connections>

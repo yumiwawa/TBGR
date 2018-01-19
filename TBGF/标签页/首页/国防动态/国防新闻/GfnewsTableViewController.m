@@ -17,11 +17,39 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    NSDictionary *dic = @{
+                          @"type":@"2",
+                          @"page":@"1"
+                          };
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];//创建AFN管理者
+    //序列化
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    //接受类型是字符串
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    
+    [manager POST:@"http://www.smartbyy.com/renfang/newsline.php" parameters:dic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        
+        NSLog(@"原始数据%@",responseObject);
+        
+        
+        NSString * str = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
+        NSLog(@"请求到数据%@",str);
+     //  NSLog(@"请求到数据长度%@",str.length);
+        
+        
+        NSData * getJsonData = [responseObject dataUsingEncoding:NSUTF8StringEncoding];
+        NSLog(@"nsdata%@",getJsonData);
+        
+        NSError * error = nil;
+        NSDictionary * getDict = [NSJSONSerialization JSONObjectWithData:getJsonData options:NSJSONReadingMutableContainers error:&error];
+       NSLog(@"nsdictionary%@",getDict);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+          NSLog(@"请求失败%@",error);
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning {
