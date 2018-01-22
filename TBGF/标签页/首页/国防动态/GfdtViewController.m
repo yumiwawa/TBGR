@@ -42,7 +42,7 @@
     UIView *viewClicked=[gestureRecognizer view];
     if (viewClicked==_gfNewsImageView) {
         NSLog(@"guofangxinwen");
-        GfnewsTableViewController *gfNewsController = [[GfnewsTableViewController alloc]init];
+        GfnewsTableViewController *gfNewsController = [[GfnewsTableViewController alloc]initWithStyle:UITableViewStyleGrouped];
         UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
         temporaryBarButtonItem.title = @"国防新闻";
         self.navigationItem.backBarButtonItem = temporaryBarButtonItem;

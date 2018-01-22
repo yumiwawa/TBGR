@@ -5,9 +5,21 @@
 //  Created by 张晓东 on 2017/12/6.
 //  Copyright © 2017年 张晓东. All rights reserved.
 //
+/**
+ *  完美解决Xcode NSLog打印不全的宏 亲测目前支持到8.2bate版
+ */
+
 
 #import "GfnewsTableViewController.h"
-
+Boolean _DEBUG=false;
+NSDictionary * _myDict;
+NSArray * _myArray;
+//#ifdef DEBUG
+////#define NSLog(format, ...) printf("class: <%p %s:(%d) > method: %s \n%s\n", self, [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )
+//#define NSLog(...) printf("%f %s\n",[[NSDate date]timeIntervalSince1970],[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);
+//#else
+//#define NSLog(format, ...)
+//#endif
 @interface GfnewsTableViewController ()
 
 @end
@@ -17,12 +29,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     NSDictionary *dic = @{
-                          @"type":@"2",
+                          @"type":@"1",
                           @"page":@"1"
                           };
-    
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];//创建AFN管理者
     //序列化
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
@@ -31,25 +41,36 @@
     
     [manager POST:@"http://www.smartbyy.com/renfang/newsline.php" parameters:dic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        
-        NSLog(@"原始数据%@",responseObject);
-        
-        
         NSString * str = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
-        NSLog(@"请求到数据%@",str);
+     //    NSLog(@"请求到数据%@",str);
      //  NSLog(@"请求到数据长度%@",str.length);
-        
-        
-        NSData * getJsonData = [responseObject dataUsingEncoding:NSUTF8StringEncoding];
-        NSLog(@"nsdata%@",getJsonData);
-        
+
+        NSData * getJsonData = [str dataUsingEncoding:NSUTF8StringEncoding];
         NSError * error = nil;
-        NSDictionary * getDict = [NSJSONSerialization JSONObjectWithData:getJsonData options:NSJSONReadingMutableContainers error:&error];
-       NSLog(@"nsdictionary%@",getDict);
+        
+       _myDict = [NSJSONSerialization JSONObjectWithData:getJsonData options:NSJSONReadingMutableContainers error:&error];
+   //   NSLog(@"nsdictionary%@",_myDict);
+        
+        
+        _myArray=[NSArray array];
+//        NSLog(@"所有的key%@",[_myDict allKeys]);
+        NSEnumerator *en=[_myDict objectEnumerator];
+        NSObject *value;
+        while(value=[en nextObject])
+        {
+            _myArray=[_myArray arrayByAddingObject:value];
+           // NSLog(@"%@",value);
+        }
+        
+         //NSLog(@"myarray%@",_myArray);
+        
+        self.tableView.reloadData;
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
           NSLog(@"请求失败%@",error);
     }];
 
+//    self.tableView.delegate=self;
+//    self.tableView.dataSource=_myDict;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,24 +81,79 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
+    if(_myArray!=NULL)
+    {
+           return [_myArray count];
+    }
     return 0;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    //为表格行定义一个静态字符串作为标识符
+    static NSString *cellId=@"cellId";
+    //从可重用的表格行的队列中取出一个表格行
+    UITableViewCell *cell=[self.tableView dequeueReusableCellWithIdentifier:cellId ];
+    if(cell==nil)
+    {
+            cell=[[MyTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        //边框圆角
+        cell.layer.cornerRadius=12;
+        cell.layer.masksToBounds=YES;
+        NSInteger rowNo=indexPath.row;
+        NSDictionary *object=[_myArray objectAtIndex:rowNo];
+//        NSLog(@"dss%ld",rowNo);
+         NSString *title=[object objectForKey:@"rf_title"];
+       // NSString * str = [[NSString alloc]initWithData:title encoding:NSUTF8StringEncoding];
+         NSLog(@"title%@",title);
+          NSString *picUrl=[object objectForKey:@"rf_picture"];
+               NSLog(@"图片路径%@",picUrl);
+        cell.textLabel.text=title;
+        //NSString *imageName=[_myDict o// objectAtIndex:rowNo];
+        cell.imageView.image=[UIImage imageNamed:@"feiji.png"];
+        //  cell.imageView.highlightedImage=[UIImage imageNamed:@"my_icon_selected.png"];
+        //cell.detailTextLabel.text=[_details objectAtIndex:rowNo];
+        //设置箭头
+       // cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+    }else
+    {
+        NSInteger rowNo=indexPath.row;
+        NSLog(@"rowNo%l",rowNo);
+        cell.layer.cornerRadius=12;
+        cell.layer.masksToBounds=YES;
+        NSDictionary *object=[_myArray objectAtIndex:rowNo];
+        //        NSLog(@"dss%ld",rowNo);
+        NSString *title=[object objectForKey:@"rf_title"];
+        // NSString * str = [[NSString alloc]initWithData:title encoding:NSUTF8StringEncoding];
+        NSLog(@"title%@",title);
+        NSString *picUrl=[object objectForKey:@"rf_picture"];
+        NSLog(@"图片路径%@",picUrl);
+        cell.textLabel.text=title;
+        //NSString *imageName=[_myDict o// objectAtIndex:rowNo];
+        cell.imageView.image=[UIImage imageNamed:@"feiji.png"];
+    }
+    [cell.textLabel setNumberOfLines:5];//可以显示3行
     return cell;
+    
+    
+//    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cellId"];
+//
+//    // 自定义表格部分。如果只使用默认形式则只需要如下指定UITableViewCell格式，默认表格行的三个属性为textLabel、detailTextLabel、image
+//    // 分别对应UITableViewCell显示的标题、纤细的内容以及左边图标，如果使用自定义表格则指定相应的类进行初始化。
+//    if (!cell) {
+//        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellId"];
+//
+//    }
+//    //根据表格行好indexPath.row对表格行内容进行设定
+//    NSUInteger rowNum = indexPath.row;
+//    cell.textLabel.text = @"hello baby";
+//    cell.textLabel.font = [UIFont boldSystemFontOfSize:17.0];
+//    //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//    return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -138,5 +214,4 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 @end

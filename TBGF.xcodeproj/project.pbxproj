@@ -11,7 +11,6 @@
 		830AFB211FD7E1C0005B6D19 /* GfdtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830AFB1F1FD7E1C0005B6D19 /* GfdtViewController.m */; };
 		830AFB221FD7E1C0005B6D19 /* GfdtViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830AFB201FD7E1C0005B6D19 /* GfdtViewController.xib */; };
 		830AFB631FD7E5D5005B6D19 /* GfnewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830AFB611FD7E5D5005B6D19 /* GfnewsTableViewController.m */; };
-		830AFB641FD7E5D5005B6D19 /* GfnewsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830AFB621FD7E5D5005B6D19 /* GfnewsTableViewController.xib */; };
 		830AFB691FD8EDA2005B6D19 /* SosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830AFB671FD8EDA2005B6D19 /* SosViewController.m */; };
 		830AFB6A1FD8EDA2005B6D19 /* SosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830AFB681FD8EDA2005B6D19 /* SosViewController.xib */; };
 		8351D31A1FC81BCD00EFBB9B /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D2F01FC81BCC00EFBB9B /* RootViewController.xib */; };
@@ -124,7 +123,6 @@
 		830AFB201FD7E1C0005B6D19 /* GfdtViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GfdtViewController.xib; sourceTree = "<group>"; };
 		830AFB601FD7E5D5005B6D19 /* GfnewsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GfnewsTableViewController.h; sourceTree = "<group>"; };
 		830AFB611FD7E5D5005B6D19 /* GfnewsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GfnewsTableViewController.m; sourceTree = "<group>"; };
-		830AFB621FD7E5D5005B6D19 /* GfnewsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GfnewsTableViewController.xib; sourceTree = "<group>"; };
 		830AFB661FD8EDA2005B6D19 /* SosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SosViewController.h; sourceTree = "<group>"; };
 		830AFB671FD8EDA2005B6D19 /* SosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SosViewController.m; sourceTree = "<group>"; };
 		830AFB681FD8EDA2005B6D19 /* SosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SosViewController.xib; sourceTree = "<group>"; };
@@ -404,7 +402,6 @@
 			children = (
 				830AFB601FD7E5D5005B6D19 /* GfnewsTableViewController.h */,
 				830AFB611FD7E5D5005B6D19 /* GfnewsTableViewController.m */,
-				830AFB621FD7E5D5005B6D19 /* GfnewsTableViewController.xib */,
 			);
 			path = "国防新闻";
 			sourceTree = "<group>";
@@ -914,7 +911,6 @@
 				8351D3201FC81C2F00EFBB9B /* MYViewController.xib in Resources */,
 				83B9A60F1FDA401C00EEB463 /* icon_lanuch.png in Resources */,
 				8351D3931FCCEF5800EFBB9B /* LoginViewController.xib in Resources */,
-				830AFB641FD7E5D5005B6D19 /* GfnewsTableViewController.xib in Resources */,
 				83B9A5FD1FDA401C00EEB463 /* map_icon_normal@2x.png in Resources */,
 				838246341FC556C800995AB9 /* Assets.xcassets in Resources */,
 				8351D3A21FCD4E5700EFBB9B /* RegisterViewController.xib in Resources */,

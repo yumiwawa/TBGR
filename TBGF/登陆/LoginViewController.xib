@@ -24,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="O8z-2D-71T">
-                    <rect key="frame" x="55" y="176" width="264" height="233"/>
+                    <rect key="frame" x="55" y="217" width="264" height="233"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="249-vF-dqB">
                             <rect key="frame" x="0.0" y="0.0" width="264" height="43"/>
@@ -97,8 +97,8 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="O8z-2D-71T" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rvv-sx-YWT"/>
-                <constraint firstItem="O8z-2D-71T" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="176" id="w3J-em-GwD"/>
+                <constraint firstItem="O8z-2D-71T" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Z9m-sc-QPG"/>
+                <constraint firstItem="O8z-2D-71T" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="gZ4-o3-XPS"/>
             </constraints>
             <connections>
                 <action selector="closeKeyboard:" destination="-1" eventType="touchDown" id="pmb-UT-Y7c"/>
