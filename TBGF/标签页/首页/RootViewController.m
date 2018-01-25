@@ -45,8 +45,11 @@
     [_sosImageView setUserInteractionEnabled:YES];
     [_sosImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickCategory:)]];
     
-    [_emergencyImageView setUserInteractionEnabled:YES];
-    [_emergencyImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickCategory:)]];
+//    [_emergencyImageView setUserInteractionEnabled:YES];
+//    [_emergencyImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickCategory:)]];
+//
+    [_businessImageView setUserInteractionEnabled:YES];
+    [_businessImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickCategory:)]];
     
 }
 - (void)viewWillAppea:(BOOL)animated
@@ -64,7 +67,7 @@
     if (viewClicked==_dongtai) {
         NSLog(@"dongtai");
         GfdtViewController *gfdtController = [[GfdtViewController alloc]init];
-
+       gfdtController.hidesBottomBarWhenPushed = YES;
         UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
         temporaryBarButtonItem.title = @"国防动态";
         self.navigationItem.backBarButtonItem = temporaryBarButtonItem;
@@ -83,7 +86,7 @@
         SosViewController *sosController = [[SosViewController alloc]init];
         sosController.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:sosController animated:NO];
-    }else if(viewClicked==_emergencyImageView)
+    }else if(viewClicked==_businessImageView)
     {
 //        NSLog(@"emergency");
 //        EmergencyViewController *emController = [[EmergencyViewController alloc]init];

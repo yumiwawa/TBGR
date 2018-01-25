@@ -51,9 +51,9 @@
 - (IBAction)goToLogin:(UIButton *)sender {
      NSLog(@"登录");
     
-    MainTabViewController *mainVC = [[MainTabViewController alloc] init];
-    [self.navigationController pushViewController:mainVC animated:NO];
-    [self.navigationController setNavigationBarHidden:YES];
+//    MainTabViewController *mainVC = [[MainTabViewController alloc] init];
+//    [self.navigationController pushViewController:mainVC animated:NO];
+//    [self.navigationController setNavigationBarHidden:YES];
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];//创建AFN管理者
     //序列化
@@ -81,9 +81,13 @@
             MainTabViewController *mainVC = [[MainTabViewController alloc] init];
             [self.navigationController pushViewController:mainVC animated:NO];
             [self.navigationController setNavigationBarHidden:YES];
-        }else
+        }else if([str isEqual:@"1"])
         {
-              alert = [UIAlertController alertControllerWithTitle:@"尊敬的用户" message:@"登录失败" preferredStyle:  UIAlertControllerStyleAlert];
+              alert = [UIAlertController alertControllerWithTitle:@"尊敬的用户" message:@"登录失败,密码错误" preferredStyle:  UIAlertControllerStyleAlert];
+        }
+        else if([str isEqual:@"2"])
+        {
+            alert = [UIAlertController alertControllerWithTitle:@"尊敬的用户" message:@"登录失败,该手机尚未注册" preferredStyle:  UIAlertControllerStyleAlert];
         }
         //解决Presenting view controllers on detached view controllers is discouraged <LoginViewController: 0x7f82c670abc0>.
         AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
@@ -97,7 +101,7 @@
         NSLog(@"%@",err);
         NSLog(@"登录失败");
         UIAlertController *alert;
-        alert = [UIAlertController alertControllerWithTitle:@"尊敬的用户" message:@"登录失败" preferredStyle:  UIAlertControllerStyleAlert];
+        alert = [UIAlertController alertControllerWithTitle:@"登陆出错" message:err preferredStyle:  UIAlertControllerStyleAlert];
         [self presentViewController:alert animated:true completion:nil];
         [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(creatAlert:) userInfo:alert repeats:NO];
     }];

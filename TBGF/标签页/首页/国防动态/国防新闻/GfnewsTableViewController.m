@@ -42,14 +42,14 @@ NSArray * _myArray;
     [manager POST:@"http://www.smartbyy.com/renfang/newsline.php" parameters:dic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         NSString * str = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
-     //    NSLog(@"请求到数据%@",str);
+      //  NSLog(@"请求到数据%@",str);
      //  NSLog(@"请求到数据长度%@",str.length);
 
         NSData * getJsonData = [str dataUsingEncoding:NSUTF8StringEncoding];
         NSError * error = nil;
         
        _myDict = [NSJSONSerialization JSONObjectWithData:getJsonData options:NSJSONReadingMutableContainers error:&error];
-   //   NSLog(@"nsdictionary%@",_myDict);
+     NSLog(@"nsdictionary%@",_myDict);
         
         
         _myArray=[NSArray array];
@@ -189,21 +189,34 @@ NSArray * _myArray;
 }
 */
 
-/*
+
 #pragma mark - Table view delegate
 
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here, for example:
     // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
+ 
+    NSUInteger row=[indexPath row];
+    NSDictionary *object=[_myArray objectAtIndex:row];
+    //        NSLog(@"dss%ld",rowNo);
+    NSString *url=[object objectForKey:@"rf_line"];
+    // NSString * str = [[NSString alloc]initWithData:title encoding:NSUTF8StringEncoding];
+    NSLog(@"url%@",url);
     
+    NewsViewController *newsViewController = [[NewsViewController alloc] init];
+    UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
+    temporaryBarButtonItem.title = @"国防动态";
+    self.navigationItem.backBarButtonItem = temporaryBarButtonItem;
+    newsViewController.newsURL=url;
+    [self.navigationController pushViewController:newsViewController animated:NO];
+//    [self.navigationController setNavigationBarHidden:YES];
+ 
     // Pass the selected object to the new view controller.
     
     // Push the view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
+  //  [self.navigationController pushViewController:detailViewController animated:YES];
 }
-*/
 
 /*
 #pragma mark - Navigation

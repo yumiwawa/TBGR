@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AFNetworking.h>
 #import "MyTableViewCell.h"
+#import "NewsViewController.h"
 @interface GfnewsTableViewController : UITableViewController
 
 @end

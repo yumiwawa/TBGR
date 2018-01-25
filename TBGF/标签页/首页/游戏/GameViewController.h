@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
 @interface GameViewController : UIViewController
-@property (strong, nonatomic) IBOutlet WKWebView *webview;
 
 @end

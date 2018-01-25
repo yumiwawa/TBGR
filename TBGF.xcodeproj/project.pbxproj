@@ -13,6 +13,7 @@
 		830AFB631FD7E5D5005B6D19 /* GfnewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830AFB611FD7E5D5005B6D19 /* GfnewsTableViewController.m */; };
 		830AFB691FD8EDA2005B6D19 /* SosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830AFB671FD8EDA2005B6D19 /* SosViewController.m */; };
 		830AFB6A1FD8EDA2005B6D19 /* SosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 830AFB681FD8EDA2005B6D19 /* SosViewController.xib */; };
+		830CE9672019D54C00FC06AF /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 830CE9662019D54C00FC06AF /* NewsViewController.m */; };
 		8351D31A1FC81BCD00EFBB9B /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D2F01FC81BCC00EFBB9B /* RootViewController.xib */; };
 		8351D31B1FC81BCD00EFBB9B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D2F21FC81BCC00EFBB9B /* RootViewController.m */; };
 		8351D31F1FC81C2F00EFBB9B /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D31C1FC81C2F00EFBB9B /* MYViewController.m */; };
@@ -29,7 +30,6 @@
 		8351D3A71FCD50A800EFBB9B /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3A51FCD50A800EFBB9B /* ChangePasswordViewController.m */; };
 		8351D3A81FCD50A800EFBB9B /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3A61FCD50A800EFBB9B /* ChangePasswordViewController.xib */; };
 		8351D3C31FCE5A7200EFBB9B /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3C11FCE5A7200EFBB9B /* GameViewController.m */; };
-		8351D3C41FCE5A7200EFBB9B /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3C21FCE5A7200EFBB9B /* GameViewController.xib */; };
 		8351D3C81FCE9DC200EFBB9B /* ValidateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3C71FCE9DC200EFBB9B /* ValidateUtil.m */; };
 		8351D4991FCFF56900EFBB9B /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8351D49A1FCFF56900EFBB9B /* libAFNetworking.a */; };
 		83762D631FD5184A004AFED1 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83762D621FD5184A004AFED1 /* MyTableViewCell.m */; };
@@ -126,6 +126,8 @@
 		830AFB661FD8EDA2005B6D19 /* SosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SosViewController.h; sourceTree = "<group>"; };
 		830AFB671FD8EDA2005B6D19 /* SosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SosViewController.m; sourceTree = "<group>"; };
 		830AFB681FD8EDA2005B6D19 /* SosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SosViewController.xib; sourceTree = "<group>"; };
+		830CE9652019D54C00FC06AF /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		830CE9662019D54C00FC06AF /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		8351D2F01FC81BCC00EFBB9B /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		8351D2F11FC81BCC00EFBB9B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		8351D2F21FC81BCC00EFBB9B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
@@ -152,7 +154,6 @@
 		8351D3AF1FCE52C800EFBB9B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		8351D3C01FCE5A7200EFBB9B /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		8351D3C11FCE5A7200EFBB9B /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		8351D3C21FCE5A7200EFBB9B /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		8351D3C61FCE9DC200EFBB9B /* ValidateUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValidateUtil.h; sourceTree = "<group>"; };
 		8351D3C71FCE9DC200EFBB9B /* ValidateUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidateUtil.m; sourceTree = "<group>"; };
 		8351D49A1FCFF56900EFBB9B /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -400,6 +401,7 @@
 		830AFB5F1FD7E5A7005B6D19 /* 国防新闻 */ = {
 			isa = PBXGroup;
 			children = (
+				830CE9642019D52C00FC06AF /* 具体新闻页 */,
 				830AFB601FD7E5D5005B6D19 /* GfnewsTableViewController.h */,
 				830AFB611FD7E5D5005B6D19 /* GfnewsTableViewController.m */,
 			);
@@ -414,6 +416,15 @@
 				830AFB681FD8EDA2005B6D19 /* SosViewController.xib */,
 			);
 			path = "紧急求救";
+			sourceTree = "<group>";
+		};
+		830CE9642019D52C00FC06AF /* 具体新闻页 */ = {
+			isa = PBXGroup;
+			children = (
+				830CE9652019D54C00FC06AF /* NewsViewController.h */,
+				830CE9662019D54C00FC06AF /* NewsViewController.m */,
+			);
+			path = "具体新闻页";
 			sourceTree = "<group>";
 		};
 		8351D32F1FC8621D00EFBB9B /* 首页 */ = {
@@ -523,7 +534,6 @@
 			children = (
 				8351D3C01FCE5A7200EFBB9B /* GameViewController.h */,
 				8351D3C11FCE5A7200EFBB9B /* GameViewController.m */,
-				8351D3C21FCE5A7200EFBB9B /* GameViewController.xib */,
 			);
 			path = "游戏";
 			sourceTree = "<group>";
@@ -902,7 +912,6 @@
 				83B9A61F1FDA401C00EEB463 /* communication_rescue.png in Resources */,
 				83B9A6161FDA401C00EEB463 /* jinjiqiujiu.jpg in Resources */,
 				83B9A60C1FDA401C00EEB463 /* lixianxiazai.jpg in Resources */,
-				8351D3C41FCE5A7200EFBB9B /* GameViewController.xib in Resources */,
 				83B9A6001FDA401C00EEB463 /* my_shoppingcar.jpg in Resources */,
 				83B9A6021FDA401C00EEB463 /* yingjishusan.jpg in Resources */,
 				83B9A6171FDA401C00EEB463 /* medical_rescue.png in Resources */,
@@ -1032,6 +1041,7 @@
 				8351D34F1FCBB11900EFBB9B /* MapViewController.m in Sources */,
 				8351D38D1FCC27C500EFBB9B /* MainTabViewController.m in Sources */,
 				8351D3A71FCD50A800EFBB9B /* ChangePasswordViewController.m in Sources */,
+				830CE9672019D54C00FC06AF /* NewsViewController.m in Sources */,
 				8351D3C81FCE9DC200EFBB9B /* ValidateUtil.m in Sources */,
 				8351D31F1FC81C2F00EFBB9B /* MYViewController.m in Sources */,
 				83E281F71FDA821A009B8432 /* APOrderInfo.m in Sources */,

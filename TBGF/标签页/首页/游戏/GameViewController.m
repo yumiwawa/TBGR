@@ -11,7 +11,7 @@
 @interface GameViewController ()
 
 @end
-
+WKWebView *webView;
 @implementation GameViewController
 
 - (void)viewDidLoad {
@@ -19,8 +19,11 @@
     CGRect viewBounds=[self.view  bounds];
     viewBounds.origin.y=20;
     viewBounds.size.height=viewBounds.size.height-20;
-    
-    WKWebView *webView = [[WKWebView alloc] initWithFrame:viewBounds];
+    if(webView==Nil)
+    {
+            webView = [[WKWebView alloc] initWithFrame:viewBounds];
+    }
+
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://play.7724.com/olgames/wddkz/?flag=open319"]]];
     [self.view addSubview:webView];
 
