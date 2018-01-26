@@ -10,6 +10,7 @@
 #import <AFNetworking.h>
 #import "MyTableViewCell.h"
 #import "NewsViewController.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 @interface GfnewsTableViewController : UITableViewController
 
 @end

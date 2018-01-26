@@ -46,7 +46,7 @@
     [firstNC.navigationBar  setBackgroundImage:[self createImageWithColor:[UIColor clearColor]] forBarMetrics:UIBarMetricsDefault];
     [firstNC.navigationBar  setShadowImage:[self createImageWithColor:[UIColor clearColor]]];
     //    [self.navigationController.navigationBar  setTintColor:[UIColor whiteColor]];
-    [firstNC.navigationBar  setTranslucent:YES];
+    [firstNC.navigationBar  setTranslucent:NO];
     
    
     //设置导航栏

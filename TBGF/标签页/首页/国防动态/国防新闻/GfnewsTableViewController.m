@@ -29,6 +29,9 @@ NSArray * _myArray;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //分割线显示全
+    [self.tableView setSeparatorInset:UIEdgeInsetsZero];
+    
     NSDictionary *dic = @{
                           @"type":@"1",
                           @"page":@"1"
@@ -96,46 +99,27 @@ NSArray * _myArray;
     //为表格行定义一个静态字符串作为标识符
     static NSString *cellId=@"cellId";
     //从可重用的表格行的队列中取出一个表格行
-    UITableViewCell *cell=[self.tableView dequeueReusableCellWithIdentifier:cellId ];
+    MyTableViewCell *cell=[self.tableView dequeueReusableCellWithIdentifier:cellId ];
     if(cell==nil)
     {
-            cell=[[MyTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        cell=[[MyTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
         //边框圆角
         cell.layer.cornerRadius=12;
         cell.layer.masksToBounds=YES;
-        NSInteger rowNo=indexPath.row;
-        NSDictionary *object=[_myArray objectAtIndex:rowNo];
-//        NSLog(@"dss%ld",rowNo);
-         NSString *title=[object objectForKey:@"rf_title"];
-       // NSString * str = [[NSString alloc]initWithData:title encoding:NSUTF8StringEncoding];
-         NSLog(@"title%@",title);
-          NSString *picUrl=[object objectForKey:@"rf_picture"];
-               NSLog(@"图片路径%@",picUrl);
-        cell.textLabel.text=title;
-        //NSString *imageName=[_myDict o// objectAtIndex:rowNo];
-        cell.imageView.image=[UIImage imageNamed:@"feiji.png"];
-        //  cell.imageView.highlightedImage=[UIImage imageNamed:@"my_icon_selected.png"];
-        //cell.detailTextLabel.text=[_details objectAtIndex:rowNo];
-        //设置箭头
-       // cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
-    }else
-    {
-        NSInteger rowNo=indexPath.row;
-        NSLog(@"rowNo%l",rowNo);
-        cell.layer.cornerRadius=12;
-        cell.layer.masksToBounds=YES;
-        NSDictionary *object=[_myArray objectAtIndex:rowNo];
-        //        NSLog(@"dss%ld",rowNo);
-        NSString *title=[object objectForKey:@"rf_title"];
-        // NSString * str = [[NSString alloc]initWithData:title encoding:NSUTF8StringEncoding];
-        NSLog(@"title%@",title);
-        NSString *picUrl=[object objectForKey:@"rf_picture"];
-        NSLog(@"图片路径%@",picUrl);
-        cell.textLabel.text=title;
-        //NSString *imageName=[_myDict o// objectAtIndex:rowNo];
-        cell.imageView.image=[UIImage imageNamed:@"feiji.png"];
+        [cell.textLabel setNumberOfLines:5];//可以显示3行
     }
-    [cell.textLabel setNumberOfLines:5];//可以显示3行
+    NSInteger rowNo=indexPath.row;
+    NSLog(@"rowNo%l",rowNo);
+    NSDictionary *object=[_myArray objectAtIndex:rowNo];
+    //        NSLog(@"dss%ld",rowNo);
+    NSString *title=[object objectForKey:@"rf_title"];
+    NSLog(@"title%@",title);
+    NSString *picUrl=[object objectForKey:@"rf_picture"];
+    NSLog(@"图片路径%@",picUrl);
+    cell.textLabel.text=title;
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:picUrl]
+                      placeholderImage:[UIImage imageNamed:@"feiji.png"]];
+  
     return cell;
     
     
@@ -205,8 +189,9 @@ NSArray * _myArray;
     NSLog(@"url%@",url);
     
     NewsViewController *newsViewController = [[NewsViewController alloc] init];
+   // newsViewController.title=@"hello baby it is you";
     UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
-    temporaryBarButtonItem.title = @"国防动态";
+   temporaryBarButtonItem.title = @"国防新闻";
     self.navigationItem.backBarButtonItem = temporaryBarButtonItem;
     newsViewController.newsURL=url;
     [self.navigationController pushViewController:newsViewController animated:NO];
@@ -227,4 +212,10 @@ NSArray * _myArray;
     // Pass the selected object to the new view controller.
 }
 */
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //返回每行的高度
+    //CGFloat就是float
+    return 140.0;
+}
 @end

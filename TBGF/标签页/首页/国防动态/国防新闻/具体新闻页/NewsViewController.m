@@ -17,8 +17,8 @@ WKWebView *newsWebView;
 - (void)viewDidLoad {
     [super viewDidLoad];
     CGRect viewBounds=[self.view  bounds];
-    viewBounds.origin.y=10;
-    viewBounds.size.height=viewBounds.size.height-10;
+//    viewBounds.origin.y=100;
+    viewBounds.size.height=viewBounds.size.height-50;
     if(newsWebView==Nil)
     {
         newsWebView = [[WKWebView alloc] initWithFrame:viewBounds];
