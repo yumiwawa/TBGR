@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AFNetworking.h>
-#import "MyTableViewCell.h"
+#import "MyNewsTableViewCell.h"
 #import "NewsViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 @interface GfnewsTableViewController : UITableViewController

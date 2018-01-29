@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MyTableViewCell.h"
+#import "MySettingTableViewCell.h"
 @interface MYViewController : UIViewController<UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) IBOutlet UILabel *nickName;

@@ -32,7 +32,7 @@
 		8351D3C31FCE5A7200EFBB9B /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3C11FCE5A7200EFBB9B /* GameViewController.m */; };
 		8351D3C81FCE9DC200EFBB9B /* ValidateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3C71FCE9DC200EFBB9B /* ValidateUtil.m */; };
 		8351D4991FCFF56900EFBB9B /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8351D49A1FCFF56900EFBB9B /* libAFNetworking.a */; };
-		83762D631FD5184A004AFED1 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83762D621FD5184A004AFED1 /* MyTableViewCell.m */; };
+		83762D631FD5184A004AFED1 /* MyNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83762D621FD5184A004AFED1 /* MyNewsTableViewCell.m */; };
 		8382462C1FC556C800995AB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8382462B1FC556C800995AB9 /* AppDelegate.m */; };
 		838246321FC556C800995AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838246301FC556C800995AB9 /* Main.storyboard */; };
 		838246341FC556C800995AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838246331FC556C800995AB9 /* Assets.xcassets */; };
@@ -40,6 +40,7 @@
 		8382463A1FC556C800995AB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 838246391FC556C800995AB9 /* main.m */; };
 		838246441FC556C800995AB9 /* TBGFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 838246431FC556C800995AB9 /* TBGFTests.m */; };
 		8382464F1FC556C800995AB9 /* TBGFUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8382464E1FC556C800995AB9 /* TBGFUITests.m */; };
+		83AE0E73201EC5FA007540E0 /* MySettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AE0E72201EC5FA007540E0 /* MySettingTableViewCell.m */; };
 		83B9A58A1FDA3E2000EEB463 /* EmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B9A5881FDA3E2000EEB463 /* EmergencyViewController.m */; };
 		83B9A58B1FDA3E2000EEB463 /* EmergencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B9A5891FDA3E2000EEB463 /* EmergencyViewController.xib */; };
 		83B9A5FC1FDA401C00EEB463 /* sheshizhuangtai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83B9A5D71FDA401200EEB463 /* sheshizhuangtai.jpg */; };
@@ -157,8 +158,8 @@
 		8351D3C61FCE9DC200EFBB9B /* ValidateUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValidateUtil.h; sourceTree = "<group>"; };
 		8351D3C71FCE9DC200EFBB9B /* ValidateUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidateUtil.m; sourceTree = "<group>"; };
 		8351D49A1FCFF56900EFBB9B /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		83762D611FD5184A004AFED1 /* MyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
-		83762D621FD5184A004AFED1 /* MyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
+		83762D611FD5184A004AFED1 /* MyNewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyNewsTableViewCell.h; sourceTree = "<group>"; };
+		83762D621FD5184A004AFED1 /* MyNewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNewsTableViewCell.m; sourceTree = "<group>"; };
 		837E190E1FD6713400198A9C /* TBGF.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TBGF.entitlements; sourceTree = "<group>"; };
 		837F726D1FD91C0400A51AF6 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		838246271FC556C800995AB9 /* TBGF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBGF.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +176,8 @@
 		8382464A1FC556C800995AB9 /* TBGFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBGFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8382464E1FC556C800995AB9 /* TBGFUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBGFUITests.m; sourceTree = "<group>"; };
 		838246501FC556C800995AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83AE0E71201EC5FA007540E0 /* MySettingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySettingTableViewCell.h; sourceTree = "<group>"; };
+		83AE0E72201EC5FA007540E0 /* MySettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySettingTableViewCell.m; sourceTree = "<group>"; };
 		83B9A5871FDA3E2000EEB463 /* EmergencyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmergencyViewController.h; sourceTree = "<group>"; };
 		83B9A5881FDA3E2000EEB463 /* EmergencyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmergencyViewController.m; sourceTree = "<group>"; };
 		83B9A5891FDA3E2000EEB463 /* EmergencyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmergencyViewController.xib; sourceTree = "<group>"; };
@@ -552,8 +555,10 @@
 		83762D5D1FD4FDA9004AFED1 /* 自定义控件 */ = {
 			isa = PBXGroup;
 			children = (
-				83762D611FD5184A004AFED1 /* MyTableViewCell.h */,
-				83762D621FD5184A004AFED1 /* MyTableViewCell.m */,
+				83762D611FD5184A004AFED1 /* MyNewsTableViewCell.h */,
+				83762D621FD5184A004AFED1 /* MyNewsTableViewCell.m */,
+				83AE0E71201EC5FA007540E0 /* MySettingTableViewCell.h */,
+				83AE0E72201EC5FA007540E0 /* MySettingTableViewCell.m */,
 			);
 			path = "自定义控件";
 			sourceTree = "<group>";
@@ -1028,10 +1033,11 @@
 				83E281F61FDA821A009B8432 /* APRSASigner.m in Sources */,
 				83C0ED7B2011F6F200EA48F0 /* MyLocation.m in Sources */,
 				830AFB211FD7E1C0005B6D19 /* GfdtViewController.m in Sources */,
-				83762D631FD5184A004AFED1 /* MyTableViewCell.m in Sources */,
+				83762D631FD5184A004AFED1 /* MyNewsTableViewCell.m in Sources */,
 				8382463A1FC556C800995AB9 /* main.m in Sources */,
 				8351D3921FCCEF5800EFBB9B /* LoginViewController.m in Sources */,
 				8351D3C31FCE5A7200EFBB9B /* GameViewController.m in Sources */,
+				83AE0E73201EC5FA007540E0 /* MySettingTableViewCell.m in Sources */,
 				83C0ED782011F6A500EA48F0 /* SingleLocDemoViewController.m in Sources */,
 				830AFB631FD7E5D5005B6D19 /* GfnewsTableViewController.m in Sources */,
 				8382462C1FC556C800995AB9 /* AppDelegate.m in Sources */,

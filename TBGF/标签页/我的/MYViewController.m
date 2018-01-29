@@ -30,15 +30,15 @@
     //为表格行定义一个静态字符串作为标识符
     static NSString *cellId=@"cellId";
     //从可重用的表格行的队列中取出一个表格行
-    UITableViewCell *cell=[_myTableView dequeueReusableCellWithIdentifier:cellId ];
+    MySettingTableViewCell *cell=[_myTableView dequeueReusableCellWithIdentifier:cellId ];
     if(cell==nil)
     {
         if(indexPath.row==3)
         {
-            cell=[[MyTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellId];
+            cell=[[MySettingTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellId];
         }else
         {
-             cell=[[MyTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+             cell=[[MySettingTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
         }
         //边框圆角
         cell.layer.cornerRadius=12;

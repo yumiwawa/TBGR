@@ -6,10 +6,10 @@
 //  Copyright © 2017年 张晓东. All rights reserved.
 //
 
-#import "MyTableViewCell.h"
+#import "MyNewsTableViewCell.h"
 #define kPagingLabel 100
 #define kPagingLabel2 200
-@implementation MyTableViewCell
+@implementation MyNewsTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

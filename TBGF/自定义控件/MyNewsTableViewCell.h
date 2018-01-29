@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyTableViewCell : UITableViewCell
+@interface MyNewsTableViewCell : UITableViewCell
 
 @end

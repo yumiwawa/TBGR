@@ -99,10 +99,10 @@ NSArray * _myArray;
     //为表格行定义一个静态字符串作为标识符
     static NSString *cellId=@"cellId";
     //从可重用的表格行的队列中取出一个表格行
-    MyTableViewCell *cell=[self.tableView dequeueReusableCellWithIdentifier:cellId ];
+    MyNewsTableViewCell *cell=[self.tableView dequeueReusableCellWithIdentifier:cellId ];
     if(cell==nil)
     {
-        cell=[[MyTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        cell=[[MyNewsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
         //边框圆角
         cell.layer.cornerRadius=12;
         cell.layer.masksToBounds=YES;
