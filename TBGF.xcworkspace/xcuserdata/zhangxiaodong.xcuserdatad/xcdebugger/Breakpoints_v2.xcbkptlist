@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TBGF/&#x6807;&#x7b7e;&#x9875;/&#x6211;&#x7684;/MYViewController.m"
-            timestampString = "538888006.5281481"
+            timestampString = "538888325.4657021"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TBGF/AppDelegate.m"
-            timestampString = "538307517.110532"
+            timestampString = "539082089.960215"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "187"
@@ -88,7 +88,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TBGF/&#x6807;&#x7b7e;&#x9875;/&#x9996;&#x9875;/&#x56fd;&#x9632;&#x52a8;&#x6001;/&#x56fd;&#x9632;&#x65b0;&#x95fb;/GfnewsTableViewController.m"
-            timestampString = "538888006.52853"
+            timestampString = "538888325.466115"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
@@ -116,7 +116,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TBGF/&#x767b;&#x9646;/LoginViewController.m"
@@ -127,6 +127,38 @@
             endingLineNumber = "78"
             landmarkName = "-goToLogin:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TBGF/&#x6807;&#x7b7e;&#x9875;/&#x5730;&#x56fe;/&#x767e;&#x5ea6;&#x5730;&#x56fe;/SingleLocDemoViewController.m"
+            timestampString = "539063680.7122101"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "-locBtnTouch:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TBGF/&#x6807;&#x7b7e;&#x9875;/&#x5730;&#x56fe;/&#x767e;&#x5ea6;&#x5730;&#x56fe;/LocationDemoViewController.m"
+            timestampString = "539082089.960408"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "LocationDemoViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

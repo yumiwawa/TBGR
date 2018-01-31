@@ -31,7 +31,6 @@
 		8351D3A81FCD50A800EFBB9B /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8351D3A61FCD50A800EFBB9B /* ChangePasswordViewController.xib */; };
 		8351D3C31FCE5A7200EFBB9B /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3C11FCE5A7200EFBB9B /* GameViewController.m */; };
 		8351D3C81FCE9DC200EFBB9B /* ValidateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351D3C71FCE9DC200EFBB9B /* ValidateUtil.m */; };
-		8351D4991FCFF56900EFBB9B /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8351D49A1FCFF56900EFBB9B /* libAFNetworking.a */; };
 		83762D631FD5184A004AFED1 /* MyNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83762D621FD5184A004AFED1 /* MyNewsTableViewCell.m */; };
 		8382462C1FC556C800995AB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8382462B1FC556C800995AB9 /* AppDelegate.m */; };
 		838246321FC556C800995AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838246301FC556C800995AB9 /* Main.storyboard */; };
@@ -40,6 +39,10 @@
 		8382463A1FC556C800995AB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 838246391FC556C800995AB9 /* main.m */; };
 		838246441FC556C800995AB9 /* TBGFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 838246431FC556C800995AB9 /* TBGFTests.m */; };
 		8382464F1FC556C800995AB9 /* TBGFUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8382464E1FC556C800995AB9 /* TBGFUITests.m */; };
+		839E75C820217AAF0041B902 /* BackgroundLocDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 839E75C520217AAE0041B902 /* BackgroundLocDemoViewController.m */; };
+		839E75C920217AAF0041B902 /* BackgroundLocDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839E75C620217AAE0041B902 /* BackgroundLocDemoViewController.xib */; };
+		839E75CE2021AB320041B902 /* LocationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 839E75CD2021AB320041B902 /* LocationDemoViewController.m */; };
+		839E75D02021AB520041B902 /* LocationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839E75CF2021AB520041B902 /* LocationDemoViewController.xib */; };
 		83AE0E73201EC5FA007540E0 /* MySettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AE0E72201EC5FA007540E0 /* MySettingTableViewCell.m */; };
 		83B9A58A1FDA3E2000EEB463 /* EmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B9A5881FDA3E2000EEB463 /* EmergencyViewController.m */; };
 		83B9A58B1FDA3E2000EEB463 /* EmergencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B9A5891FDA3E2000EEB463 /* EmergencyViewController.xib */; };
@@ -80,8 +83,6 @@
 		83B9A61E1FDA401C00EEB463 /* feiji.png in Resources */ = {isa = PBXBuildFile; fileRef = 83B9A5F91FDA401B00EEB463 /* feiji.png */; };
 		83B9A61F1FDA401C00EEB463 /* communication_rescue.png in Resources */ = {isa = PBXBuildFile; fileRef = 83B9A5FA1FDA401C00EEB463 /* communication_rescue.png */; };
 		83B9A6201FDA401C00EEB463 /* my_binding.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83B9A5FB1FDA401C00EEB463 /* my_binding.jpg */; };
-		83C0ED772011F6A500EA48F0 /* SingleLocDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83C0ED742011F6A500EA48F0 /* SingleLocDemoViewController.xib */; };
-		83C0ED782011F6A500EA48F0 /* SingleLocDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C0ED752011F6A500EA48F0 /* SingleLocDemoViewController.m */; };
 		83C0ED7B2011F6F200EA48F0 /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C0ED7A2011F6F200EA48F0 /* MyLocation.m */; };
 		83CCA5401FDA664500D90B56 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CCA53F1FDA663500D90B56 /* SystemConfiguration.framework */; };
 		83CCA5421FDA665700D90B56 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CCA5411FDA665600D90B56 /* libc++.tbd */; };
@@ -157,7 +158,6 @@
 		8351D3C11FCE5A7200EFBB9B /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		8351D3C61FCE9DC200EFBB9B /* ValidateUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValidateUtil.h; sourceTree = "<group>"; };
 		8351D3C71FCE9DC200EFBB9B /* ValidateUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidateUtil.m; sourceTree = "<group>"; };
-		8351D49A1FCFF56900EFBB9B /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		83762D611FD5184A004AFED1 /* MyNewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyNewsTableViewCell.h; sourceTree = "<group>"; };
 		83762D621FD5184A004AFED1 /* MyNewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNewsTableViewCell.m; sourceTree = "<group>"; };
 		837E190E1FD6713400198A9C /* TBGF.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TBGF.entitlements; sourceTree = "<group>"; };
@@ -176,6 +176,12 @@
 		8382464A1FC556C800995AB9 /* TBGFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBGFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8382464E1FC556C800995AB9 /* TBGFUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBGFUITests.m; sourceTree = "<group>"; };
 		838246501FC556C800995AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839E75C520217AAE0041B902 /* BackgroundLocDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundLocDemoViewController.m; sourceTree = "<group>"; };
+		839E75C620217AAE0041B902 /* BackgroundLocDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundLocDemoViewController.xib; sourceTree = "<group>"; };
+		839E75C720217AAF0041B902 /* BackgroundLocDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundLocDemoViewController.h; sourceTree = "<group>"; };
+		839E75CC2021AB320041B902 /* LocationDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDemoViewController.h; sourceTree = "<group>"; };
+		839E75CD2021AB320041B902 /* LocationDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDemoViewController.m; sourceTree = "<group>"; };
+		839E75CF2021AB520041B902 /* LocationDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationDemoViewController.xib; sourceTree = "<group>"; };
 		83AE0E71201EC5FA007540E0 /* MySettingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySettingTableViewCell.h; sourceTree = "<group>"; };
 		83AE0E72201EC5FA007540E0 /* MySettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySettingTableViewCell.m; sourceTree = "<group>"; };
 		83B9A5871FDA3E2000EEB463 /* EmergencyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmergencyViewController.h; sourceTree = "<group>"; };
@@ -218,9 +224,6 @@
 		83B9A5F91FDA401B00EEB463 /* feiji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feiji.png; sourceTree = "<group>"; };
 		83B9A5FA1FDA401C00EEB463 /* communication_rescue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = communication_rescue.png; sourceTree = "<group>"; };
 		83B9A5FB1FDA401C00EEB463 /* my_binding.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = my_binding.jpg; sourceTree = "<group>"; };
-		83C0ED742011F6A500EA48F0 /* SingleLocDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleLocDemoViewController.xib; sourceTree = "<group>"; };
-		83C0ED752011F6A500EA48F0 /* SingleLocDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleLocDemoViewController.m; sourceTree = "<group>"; };
-		83C0ED762011F6A500EA48F0 /* SingleLocDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLocDemoViewController.h; sourceTree = "<group>"; };
 		83C0ED792011F6F200EA48F0 /* MyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocation.h; sourceTree = "<group>"; };
 		83C0ED7A2011F6F200EA48F0 /* MyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocation.m; sourceTree = "<group>"; };
 		83CCA53F1FDA663500D90B56 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -337,7 +340,6 @@
 				83CCA5401FDA664500D90B56 /* SystemConfiguration.framework in Frameworks */,
 				83CCA5441FDA666100D90B56 /* libz.tbd in Frameworks */,
 				83CCA5421FDA665700D90B56 /* libc++.tbd in Frameworks */,
-				8351D4991FCFF56900EFBB9B /* libAFNetworking.a in Frameworks */,
 				164D47A41168156BD606DCB9 /* libPods-TBGF.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,7 +386,6 @@
 				83CCA5411FDA665600D90B56 /* libc++.tbd */,
 				83CCA53F1FDA663500D90B56 /* SystemConfiguration.framework */,
 				8351D3AF1FCE52C800EFBB9B /* WebKit.framework */,
-				8351D49A1FCFF56900EFBB9B /* libAFNetworking.a */,
 				FC70BE31CDF73A51A156BB81 /* libPods-TBGF.a */,
 			);
 			name = Frameworks;
@@ -447,11 +448,14 @@
 		8351D3301FC8623E00EFBB9B /* 百度地图 */ = {
 			isa = PBXGroup;
 			children = (
+				839E75CF2021AB520041B902 /* LocationDemoViewController.xib */,
+				839E75CC2021AB320041B902 /* LocationDemoViewController.h */,
+				839E75CD2021AB320041B902 /* LocationDemoViewController.m */,
+				839E75C720217AAF0041B902 /* BackgroundLocDemoViewController.h */,
+				839E75C520217AAE0041B902 /* BackgroundLocDemoViewController.m */,
+				839E75C620217AAE0041B902 /* BackgroundLocDemoViewController.xib */,
 				83C0ED792011F6F200EA48F0 /* MyLocation.h */,
 				83C0ED7A2011F6F200EA48F0 /* MyLocation.m */,
-				83C0ED762011F6A500EA48F0 /* SingleLocDemoViewController.h */,
-				83C0ED752011F6A500EA48F0 /* SingleLocDemoViewController.m */,
-				83C0ED742011F6A500EA48F0 /* SingleLocDemoViewController.xib */,
 			);
 			path = "百度地图";
 			sourceTree = "<group>";
@@ -918,6 +922,7 @@
 				83B9A6161FDA401C00EEB463 /* jinjiqiujiu.jpg in Resources */,
 				83B9A60C1FDA401C00EEB463 /* lixianxiazai.jpg in Resources */,
 				83B9A6001FDA401C00EEB463 /* my_shoppingcar.jpg in Resources */,
+				839E75C920217AAF0041B902 /* BackgroundLocDemoViewController.xib in Resources */,
 				83B9A6021FDA401C00EEB463 /* yingjishusan.jpg in Resources */,
 				83B9A6171FDA401C00EEB463 /* medical_rescue.png in Resources */,
 				83B9A60A1FDA401C00EEB463 /* shangqihezuo.jpg in Resources */,
@@ -929,7 +934,7 @@
 				838246341FC556C800995AB9 /* Assets.xcassets in Resources */,
 				8351D3A21FCD4E5700EFBB9B /* RegisterViewController.xib in Resources */,
 				83B9A61E1FDA401C00EEB463 /* feiji.png in Resources */,
-				83C0ED772011F6A500EA48F0 /* SingleLocDemoViewController.xib in Resources */,
+				839E75D02021AB520041B902 /* LocationDemoViewController.xib in Resources */,
 				83B9A6061FDA401C00EEB463 /* home_icon_normal@2x.png in Resources */,
 				83B9A61A1FDA401C00EEB463 /* guofangzhishi.jpg in Resources */,
 				83B9A5FF1FDA401C00EEB463 /* my_message.jpg in Resources */,
@@ -1029,6 +1034,7 @@
 			files = (
 				8351D39B1FCD48D100EFBB9B /* PhoneVerifyViewController.m in Sources */,
 				8351D31B1FC81BCD00EFBB9B /* RootViewController.m in Sources */,
+				839E75CE2021AB320041B902 /* LocationDemoViewController.m in Sources */,
 				83E281F51FDA821A009B8432 /* openssl_wrapper.m in Sources */,
 				83E281F61FDA821A009B8432 /* APRSASigner.m in Sources */,
 				83C0ED7B2011F6F200EA48F0 /* MyLocation.m in Sources */,
@@ -1038,7 +1044,6 @@
 				8351D3921FCCEF5800EFBB9B /* LoginViewController.m in Sources */,
 				8351D3C31FCE5A7200EFBB9B /* GameViewController.m in Sources */,
 				83AE0E73201EC5FA007540E0 /* MySettingTableViewCell.m in Sources */,
-				83C0ED782011F6A500EA48F0 /* SingleLocDemoViewController.m in Sources */,
 				830AFB631FD7E5D5005B6D19 /* GfnewsTableViewController.m in Sources */,
 				8382462C1FC556C800995AB9 /* AppDelegate.m in Sources */,
 				830AFB691FD8EDA2005B6D19 /* SosViewController.m in Sources */,
@@ -1046,6 +1051,7 @@
 				8351D3A11FCD4E5700EFBB9B /* RegisterViewController.m in Sources */,
 				8351D34F1FCBB11900EFBB9B /* MapViewController.m in Sources */,
 				8351D38D1FCC27C500EFBB9B /* MainTabViewController.m in Sources */,
+				839E75C820217AAF0041B902 /* BackgroundLocDemoViewController.m in Sources */,
 				8351D3A71FCD50A800EFBB9B /* ChangePasswordViewController.m in Sources */,
 				830CE9672019D54C00FC06AF /* NewsViewController.m in Sources */,
 				8351D3C81FCE9DC200EFBB9B /* ValidateUtil.m in Sources */,

@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <BMKLocationkit/BMKLocationComponent.h>
-#import "SingleLocDemoViewController.h"
 #import "AppDelegate.h"
-
+#import "LocationDemoViewController.h"
+#import "BackgroundLocDemoViewController.h"
 @interface MapViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *ditu;
 @end

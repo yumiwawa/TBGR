@@ -7,11 +7,9 @@
 //
 
 #import "MapViewController.h"
-
 @interface MapViewController ()
 
 @end
-
 @implementation MapViewController
 
 
@@ -53,7 +51,7 @@
     UIView *viewClicked=[gestureRecognizer view];
     if (viewClicked==_ditu) {
         NSLog(@"ditu");
-        SingleLocDemoViewController *baiduMapController = [[SingleLocDemoViewController alloc]init];
+        LocationDemoViewController *baiduMapController = [[LocationDemoViewController alloc]init];
         baiduMapController.hidesBottomBarWhenPushed = YES;
         UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
         temporaryBarButtonItem.title = @"地图";

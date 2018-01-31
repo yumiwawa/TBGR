@@ -29,25 +29,25 @@
     }
       NSLog(@"百度地图初始化成功");
  
-    //初始化百度定位
-    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:@"chkdQij54eulOC3dMWadlbl08Cu874h6" authDelegate:self];
-    _mapLocationManager.delegate = self;
-    //设置返回位置的坐标系类型
-    _mapLocationManager.coordinateType = BMKLocationCoordinateTypeBMK09LL;
-    //设置距离过滤参数
-    _mapLocationManager.distanceFilter = kCLDistanceFilterNone;
-    //设置预期精度参数
-    _mapLocationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    //设置应用位置类型
-    _mapLocationManager.activityType = CLActivityTypeAutomotiveNavigation;
-    //设置是否自动停止位置更新
-    _mapLocationManager.pausesLocationUpdatesAutomatically = NO;
-    //设置是否允许后台定位
-    _mapLocationManager.allowsBackgroundLocationUpdates = YES;
-    //设置位置获取超时时间
-    _mapLocationManager.locationTimeout = 10;
-    //设置获取地址信息超时时间
-    _mapLocationManager.reGeocodeTimeout = 10;
+//    //初始化百度定位
+//    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:@"chkdQij54eulOC3dMWadlbl08Cu874h6" authDelegate:self];
+//    _mapLocationManager.delegate = self;
+//    //设置返回位置的坐标系类型
+//    _mapLocationManager.coordinateType = BMKLocationCoordinateTypeBMK09LL;
+//    //设置距离过滤参数
+//    _mapLocationManager.distanceFilter = kCLDistanceFilterNone;
+//    //设置预期精度参数
+//    _mapLocationManager.desiredAccuracy = kCLLocationAccuracyBest;
+//    //设置应用位置类型
+//    _mapLocationManager.activityType = CLActivityTypeAutomotiveNavigation;
+//    //设置是否自动停止位置更新
+//    _mapLocationManager.pausesLocationUpdatesAutomatically = NO;
+//    //设置是否允许后台定位
+//    _mapLocationManager.allowsBackgroundLocationUpdates = YES;
+//    //设置位置获取超时时间
+//    _mapLocationManager.locationTimeout = 10;
+//    //设置获取地址信息超时时间
+//    _mapLocationManager.reGeocodeTimeout = 10;
     
     // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
     BOOL ret = [_mapManager start:@"chkdQij54eulOC3dMWadlbl08Cu874h6"  generalDelegate:nil];

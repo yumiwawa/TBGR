@@ -26,8 +26,11 @@ static NSString *channel = @"App store";
 static BOOL isProduction = FALSE;
 @interface AppDelegate : UIResponder<UIApplicationDelegate> {
     BMKMapManager* _mapManager;
-    BMKLocationManager* _mapLocationManager;
+    
 }
+
+@property (strong, nonatomic) BMKLocationManager* mapLocationManager;
+
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) UINavigationController *navController;
