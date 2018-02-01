@@ -35,11 +35,11 @@
     [stopBtn setEnabled:NO];
     [stopBtn setAlpha:0.6];
     
-    UIBarButtonItem* barItem = [[UIBarButtonItem alloc]init];
-    barItem.target = self;
-    barItem.action = @selector(customLocationAccuracyCircle);
-    barItem.title = @"自定义精度圈";
-    self.navigationItem.rightBarButtonItem = barItem;
+//    UIBarButtonItem* barItem = [[UIBarButtonItem alloc]init];
+//    barItem.target = self;
+//    barItem.action = @selector(customLocationAccuracyCircle);
+//    barItem.title = @"自定义精度圈";
+//    self.navigationItem.rightBarButtonItem = barItem;
     
 }
 

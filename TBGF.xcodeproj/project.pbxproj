@@ -1163,6 +1163,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				WARNING_CFLAGS = "-fembed-bitcode";
 			};
 			name = Debug;
 		};
@@ -1212,6 +1213,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = "-fembed-bitcode";
 			};
 			name = Release;
 		};
@@ -1224,6 +1226,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GQ3UYAW932;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1245,7 +1248,6 @@
 				PROVISIONING_PROFILE = "3df5137c-dd62-4adf-b224-4ddbc69b65db";
 				PROVISIONING_PROFILE_SPECIFIER = tbgf_development;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				"WARNING_CFLAGS[arch=*]" = "-Wno-documentation";
 			};
 			name = Debug;
 		};
@@ -1259,6 +1261,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GQ3UYAW932;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

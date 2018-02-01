@@ -67,6 +67,10 @@
                           @"name":userStr,
                           @"password":passStr
                           };
+//    if()
+//    {
+//
+//    }
    
     [manager POST:@"http://www.smartbyy.com/login/loginNameTest.php" parameters:dic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *nsdic = responseObject;
